@@ -1,0 +1,9 @@
+{
+    "version": "1.0",
+    "services": {
+        "web": {
+            "port": 8000,
+            "volumes": [{"name": "caring-contact-data", "destinationPath": "/data"}]
+        }
+    }
+}

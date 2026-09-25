@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Caring Contact Resource Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --ground:#FFFFFF; --surface:#FFFFFF; --sunk:#E8F5FA; --ink:#12305F; --text:#212529; --muted:#4F6178; --line:#C9D6E3;
+  --navy:#0E3B7C; --navy-ink:#FFFFFF; --lime:#E5F29C; --lime-strong:#DDEB76; --teal:#0E8A78; --sky:#E8F5FA; --bright:#0277C8;
+  --accent:#0E3B7C; --accent-ink:#FFFFFF; --accent-soft:#E8F5FA;
+  --crit:#A3281A; --crit-soft:#FDECE8; --warn:#8A5A00; --warn-soft:#FBF1DC;
+  --sugg:#5B3F9E; --sugg-soft:#EEE8FA; --ok:#0B6E5F; --ok-soft:#DDF3EE;
+  --display:"League Spartan","Poppins",system-ui,sans-serif; --body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  color-scheme:dark; --ground:#0B1526; --surface:#121F35; --sunk:#172944; --ink:#DCE8F8; --text:#E3E9F2; --muted:#9FB1C9; --line:#26395A;
+  --navy:#0A2A58; --navy-ink:#FFFFFF; --lime:#2E3714; --lime-strong:#3B4719; --teal:#4CC3AE; --sky:#132640; --bright:#5FB4F0;
+  --accent:#8CC4F5; --accent-ink:#08172C; --accent-soft:#172944; --crit:#F29A88; --crit-soft:#3A1D17; --warn:#F0C06A; --warn-soft:#352812;
+  --sugg:#B9A2F0; --sugg-soft:#2A2143; --ok:#7FD6C2; --ok-soft:#123530;}}
+:root[data-theme="dark"]{
+  color-scheme:dark; --ground:#0B1526; --surface:#121F35; --sunk:#172944; --ink:#DCE8F8; --text:#E3E9F2; --muted:#9FB1C9; --line:#26395A;
+  --navy:#0A2A58; --navy-ink:#FFFFFF; --lime:#2E3714; --lime-strong:#3B4719; --teal:#4CC3AE; --sky:#132640; --bright:#5FB4F0;
+  --accent:#8CC4F5; --accent-ink:#08172C; --accent-soft:#172944; --crit:#F29A88; --crit-soft:#3A1D17; --warn:#F0C06A; --warn-soft:#352812;
+  --sugg:#B9A2F0; --sugg-soft:#2A2143; --ok:#7FD6C2; --ok-soft:#123530;}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0}
+img{max-width:100%}
+body{background:var(--ground);color:var(--text);font:16px/1.5 var(--body);padding-inline:0;padding-block:0 48px}
+.wrap,.band>div,.strip>div{padding-inline:16px}
+h1,h2,h3{color:var(--ink)}
+.wrap{max-width:1180px;margin:0 auto}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+a{color:var(--accent)}
+.muted{color:var(--muted)}
+
+.strip{background:var(--navy);color:var(--navy-ink);font-size:15px;font-weight:700}
+.strip>div{max-width:1180px;margin:0 auto;padding-block:10px;text-align:center}
+.strip .hl{color:#E5F29C}
+.band{background:var(--lime)}
+.band>div{max-width:1180px;margin:0 auto}
+header.top{padding-block:22px 22px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.logo{border:3px solid var(--ink);border-left:0;border-bottom:0;padding:6px 10px 2px 0;line-height:.92}
+.logo small{display:block;font:700 12px var(--display);color:var(--teal);letter-spacing:.04em;text-transform:uppercase}
+.logo h1{font-size:clamp(24px,4vw,34px);font-weight:800;letter-spacing:-.01em}
+.brand p{margin:0;color:var(--ink);max-width:40ch;font-weight:700}
+.mode{display:flex;gap:6px}
+.right{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.signout{margin:0}
+.signout button{border:0;background:none;color:var(--ink);text-decoration:underline;font:700 14px var(--body);padding:4px}
+.mode button{border:2px solid var(--navy);background:transparent;padding:7px 16px;border-radius:6px;font:700 15px var(--display);color:var(--ink)}
+.mode button[aria-pressed="true"]{background:var(--navy);color:var(--navy-ink)}
+.hero{padding-block:26px 6px;text-align:center}
+.hero h2{font-size:clamp(24px,3.6vw,36px);font-weight:800}
+.hero p{margin:6px auto 0;color:var(--muted);max-width:60ch}
+.topics{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-block:18px 26px}
+.topics button{border:0;background:var(--lime-strong);color:var(--ink);border-radius:26px;padding:16px 18px;min-height:74px;font:700 17px/1.2 var(--display);text-align:center;display:grid;gap:2px;place-items:center}
+.topics button span{font:400 13px var(--body);color:var(--muted)}
+.topics button:hover{filter:brightness(.96)}
+.topics button.crit{background:var(--navy);color:var(--navy-ink)}
+.topics button.crit span{color:#C9D6E3}
+.searchbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--ground);padding-block:10px 12px;border-bottom:1px solid var(--line)}
+.searchbox{display:flex;align-items:center;gap:10px;background:var(--surface);border:2px solid var(--navy);border-radius:8px;padding:4px 6px 4px 14px}
+.searchbox:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--teal) 45%,transparent)}
+.searchbox svg{flex:none;color:var(--muted)}
+#q{flex:1;min-width:0;border:0;background:transparent;font-size:19px;padding:10px 0;outline:none}
+.clear{border:0;background:var(--sunk);border-radius:10px;padding:6px 12px;color:var(--muted)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px;align-items:center}
+.filters select{background:var(--surface);border:1px solid var(--navy);border-radius:6px;font-weight:700;padding:7px 10px;max-width:100%}
+.toggle{display:inline-flex;gap:6px;align-items:center;background:var(--surface);border:1px solid var(--navy);border-radius:6px;font-weight:700;padding:6px 10px;font-size:14px}
+.toggle input{accent-color:var(--accent);width:16px;height:16px;margin:0}
+.count{margin-left:auto;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.notices{display:grid;gap:8px;margin-block:4px 16px}
+.notice{border-radius:12px;padding:12px 14px;display:grid;gap:2px;border:1px solid transparent}
+.notice.critical{background:var(--crit-soft);border-color:color-mix(in srgb,var(--crit) 35%,transparent)}
+.notice.critical strong{color:var(--crit)}
+.notice.info{background:var(--sky);border-color:transparent}
+.notice strong{font-family:var(--display);font-size:15px}
+.notice p{margin:0;font-size:15px}
+
+.layout{display:grid;grid-template-columns:250px 1fr;gap:24px;align-items:start}
+nav.cats{position:sticky;top:140px;display:grid;gap:2px;max-height:calc(100vh - 170px);overflow:auto;padding-right:4px}
+nav.cats button{display:flex;justify-content:space-between;gap:8px;text-align:left;border:0;background:transparent;border-radius:8px;padding:7px 10px;font-size:14px;color:var(--ink)}
+nav.cats button:hover{background:var(--sunk)}
+nav.cats button[aria-pressed="true"]{background:var(--navy);color:var(--navy-ink);font-weight:700}
+nav.cats .n{font-variant-numeric:tabular-nums;opacity:.7}
+.catselect{display:none}
+@media (max-width:820px){.layout{grid-template-columns:1fr}nav.cats{display:none}.catselect{display:block}}
+
+.group{margin-bottom:28px}
+.group>h2{font-size:21px;font-weight:800;padding-bottom:6px;border-bottom:3px solid var(--teal);margin-bottom:4px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.group>p.gdesc{margin:0 0 10px;color:var(--muted);font-size:14px}
+.cards{display:grid;gap:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;box-shadow:0 1px 0 var(--line);padding:14px 16px;display:grid;gap:8px}
+.card.sugg{border-style:dashed;border-color:var(--sugg)}
+.card h3{font-size:19px;font-weight:700;line-height:1.3}
+.badges{display:flex;flex-wrap:wrap;gap:6px}
+.b{font-size:12px;font-weight:700;letter-spacing:.02em;padding:2px 8px;border-radius:999px;background:var(--sunk);color:var(--muted)}
+.b.h24{background:var(--ok-soft);color:var(--ok)}
+.b.ref{background:var(--crit-soft);color:var(--crit)}
+.b.sg{background:var(--sugg-soft);color:var(--sugg)}
+.b.out{background:var(--warn-soft);color:var(--warn)}
+.b.hid{background:var(--ink);color:var(--ground)}
+.card p.desc{margin:0;max-width:75ch}
+.contacts{display:flex;flex-wrap:wrap;gap:8px}
+.num{display:inline-flex;align-items:center;gap:8px;background:var(--sky);border-radius:10px;padding:5px 6px 5px 10px}
+.num .lbl{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.num .v{font-family:var(--mono);font-size:16px;font-variant-numeric:tabular-nums;user-select:all}
+.num button{border:0;background:var(--navy);border-radius:6px;padding:3px 10px;font-size:13px;color:var(--navy-ink);font-weight:700}
+.meta{display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:14px;margin:0}
+.meta dt{color:var(--muted)}
+.meta dd{margin:0;overflow-wrap:anywhere}
+.warnline{font-size:14px;background:var(--warn-soft);color:var(--ink);border-radius:8px;padding:6px 10px;margin:0}
+.card.sugg .warnline{background:var(--sugg-soft)}
+.src{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.editlink{border:0;background:none;color:var(--accent);font-weight:700;font-size:13px;padding:0}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:24px;text-align:center;color:var(--muted)}
+mark{background:color-mix(in srgb,var(--warn) 25%,transparent);color:inherit;border-radius:3px}
+
+/* admin */
+.admin{display:grid;gap:16px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:7px 14px;font-weight:700}
+.tabs button[aria-pressed="true"]{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px}
+.adminlist{display:grid;gap:4px;max-height:560px;overflow:auto}
+.row{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 10px;border-radius:8px;border:1px solid transparent}
+.row:hover{background:var(--sunk)}
+.row .t{min-width:0;overflow-wrap:anywhere}
+.row .t small{display:block;color:var(--muted)}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:8px 14px;font-weight:700}
+.btn.primary{background:var(--navy);color:var(--navy-ink);border-color:var(--navy)}
+.btn.danger{color:var(--crit);border-color:color-mix(in srgb,var(--crit) 50%,transparent)}
+.btn.small{padding:4px 10px;font-size:13px}
+.adminbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.adminbar input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface)}
+form.edit{display:grid;gap:12px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+label.f{display:grid;gap:4px;font-size:14px;font-weight:700}
+label.f span.hint{font-weight:400;color:var(--muted);font-size:13px}
+label.f input,label.f textarea,label.f select{border:1px solid var(--line);border-radius:9px;padding:8px 10px;background:var(--ground);font-weight:400;width:100%}
+label.f textarea{min-height:90px;resize:vertical}
+fieldset{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:0;display:grid;gap:8px}
+legend{font-weight:700;font-size:14px;padding:0 4px}
+.pair{display:grid;grid-template-columns:1fr 1.4fr auto;gap:6px}
+.pair input{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--ground);min-width:0}
+.checks{display:flex;flex-wrap:wrap;gap:8px 16px}
+.checks label{display:inline-flex;gap:6px;align-items:center;font-size:14px}
+.checks input{accent-color:var(--accent)}
+.status{font-size:14px;min-height:1.5em}
+.status.err{color:var(--crit)}
+.status.good{color:var(--ok)}
+.confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--crit-soft);border-radius:10px;padding:8px 12px}
+.adminhead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.loading{padding:40px 0;color:var(--muted)}
+@media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}}
+</style>
+</head>
+<body>
+
+<div class="strip" id="strip" role="note"><div id="stripText">Volunteers never call PES directly. <span class="hl">PES always arrives with the police.</span></div></div>
+<div class="band"><div>
+  <header class="top">
+    <div class="brand">
+      <div class="logo"><small>Caring Contact · NJ</small><h1 id="siteTitle">Resource Finder</h1></div>
+      <p id="siteSub">New Jersey mental health and support resources for Caring Contact volunteers</p>
+    </div>
+    <div class="right">
+    <div class="mode" id="modeSwitch" hidden>
+      <button type="button" id="modeFind" aria-pressed="true">Find resources</button>
+      <button type="button" id="modeAdmin" aria-pressed="false">Manage</button>
+    </div>
+    <form method="post" action="/logout" class="signout"><button type="submit">Sign out</button></form>
+    </div>
+  </header>
+</div></div>
+<div class="wrap">
+<main id="findView">
+    <div class="searchbar">
+      <div class="searchbox">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" autocomplete="off" placeholder="Try: grief, Bergen, teen, 24/7, housing, veteran, eating…" aria-label="Search resources">
+        <button type="button" class="clear" id="clearQ" hidden>Clear</button>
+      </div>
+      <div class="filters">
+        <select id="catSel" class="catselect" aria-label="Category"></select>
+        <select id="countySel" aria-label="County"></select>
+        <select id="ageSel" aria-label="Age"><option value="">Any age</option><option value="youth">Youth (under 18)</option><option value="adult">Adult (18+)</option></select>
+        <label class="toggle"><input type="checkbox" id="only247"> Open 24/7</label>
+        <label class="toggle"><input type="checkbox" id="showSugg" checked> Show suggestions</label>
+        <span class="count" id="count"></span>
+      </div>
+    </div>
+    <section class="notices" id="notices" aria-label="Important rules"></section>
+    <section id="home" aria-label="Browse by topic"><div class="hero"><h2>What does the caller need help with?</h2><p>Search above, or pick a topic. Filter by county, age and 24/7 to narrow the list.</p></div><div class="topics" id="topics"></div></section>
+    <div class="layout">
+      <nav class="cats" id="cats" aria-label="Categories"></nav>
+      <div id="results"><p class="loading">Loading resources…</p></div>
+    </div>
+  </main>
+
+  <main id="adminView" hidden></main>
+</div>
+
+<script>
+(() => {
+  const $ = s => document.querySelector(s);
+  const h = (tag, attrs, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? "" : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid.nodeType ? kid : document.createTextNode(String(kid)));
+    return el;
+  };
+  const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
+
+  const S = { resources: [], categories: [], notices: [], site: null, loaded: new Set(), cat: "all", admin: false, tab: "resources", editing: null };
+  let db = null;
+
+  // ---------- data ----------
+  const byOrder = (a, b) => (a.order ?? 0) - (b.order ?? 0) || String(a.name || a.title || "").localeCompare(String(b.name || b.title || ""));
+  const catMap = () => Object.fromEntries(S.categories.map(c => [c.id, c]));
+  const counties = () => (S.site?.counties?.length ? S.site.counties : []);
+
+  function subscribe(name, key) {
+    db.collection(name).onSnapshot(snap => {
+      const rows = snap.docs.filter(d => d.exists).map(d => ({ id: d.id, ...d.data() }));
+      if (key === "site") S.site = rows.find(r => r.id === "site") || null; else S[key] = rows.sort(byOrder);
+      S.loaded.add(key);
+      renderAll();
+    }, err => { $("#results").replaceChildren(h("div", { class: "empty" }, "The resource list could not load (" + err.code + "). Try reloading the page.")); });
+  }
+
+  // ---------- search ----------
+  const norm = s => String(s || "").toLowerCase().replace(/[’']/g, "'");
+  const digits = s => String(s || "").replace(/\D/g, "");
+  function haystack(r) {
+    const cm = catMap();
+    return norm([r.name, r.description, r.notes, r.hours, r.ages, r.cost, r.address, r.website, (r.tags || []).join(" "),
+      (r.counties || []).join(" ") + " county", (r.categories || []).map(c => cm[c]?.name).join(" "),
+      (r.phones || []).map(p => p.label + " " + p.number).join(" "), (r.texts || []).map(t => t.label + " " + t.value).join(" "),
+      r.is247 ? "24/7 24 hour 24-hour anytime overnight" : "", r.suggestion ? "suggestion suggested" : "",
+      r.goesToCaller ? "outreach goes to caller mobile" : ""].join(" "));
+  }
+  function score(r, terms) {
+    if (!terms.length) return 1;
+    const hay = haystack(r), name = norm(r.name), dig = digits((r.phones || []).map(p => p.number).join(" "));
+    let s = 0;
+    for (const t of terms) {
+      const td = digits(t);
+      if (td.length >= 3 && dig.includes(td)) { s += 5; continue; }
+      const county = counties().find(c => c.toLowerCase() === t);
+      if (county) { if ((r.counties || []).some(c => c === county || c === "Statewide" || c === "National")) { s += 1; continue; } return 0; }
+      if (!hay.includes(t)) return 0;
+      s += name.includes(t) ? 4 : 1;
+    }
+    return s;
+  }
+  // Inclusive on purpose: a service is only hidden when its ages clearly exclude the group.
+  function ageFits(r, age) {
+    const a = String(r.ages || "").trim();
+    if (!a) return true;
+    return age === "youth" ? !/^(18|21)\+|older/i.test(a) : !/under 18|^youth$/i.test(a);
+  }
+  function filtered() {
+    const q = norm($("#q").value).trim();
+    const terms = q.split(/\s+/).filter(Boolean);
+    const age = $("#ageSel").value, county = $("#countySel").value, only247 = $("#only247").checked, sugg = $("#showSugg").checked;
+    return S.resources.filter(r => !r.hidden || S.admin)
+      .filter(r => S.cat === "all" || (r.categories || []).includes(S.cat))
+      .filter(r => !county || (r.counties || []).some(c => c === county || c === "Statewide" || c === "National"))
+      .filter(r => !only247 || r.is247)
+      .filter(r => !age || ageFits(r, age))
+      .filter(r => sugg || !r.suggestion)
+      .map(r => ({ r, s: score(r, terms) })).filter(x => x.s > 0);
+  }
+
+  // ---------- volunteer view ----------
+  function renderNotices() {
+    const crit = S.notices.filter(n => !n.hidden && n.level === "critical");
+    $("#strip").hidden = !crit.length;
+    $("#stripText").replaceChildren(...crit.flatMap((n, i) => [i ? " · " : "", h("span", { class: "hl" }, n.title + "."), n.banner ? " " + n.banner : ""]));
+    $("#notices").replaceChildren(...S.notices.filter(n => !n.hidden).map(n =>
+      h("div", { class: "notice " + (n.level === "critical" ? "critical" : "info") }, h("strong", {}, n.title), h("p", {}, n.body))));
+  }
+  function renderFilters() {
+    const cs = $("#countySel"), cur = cs.value;
+    cs.replaceChildren(h("option", { value: "" }, "All counties"), ...counties().map(c => h("option", { value: c }, c + " County")));
+    cs.value = cur;
+    const visible = S.resources.filter(r => !r.hidden || S.admin);
+    const cnt = id => visible.filter(r => id === "all" || (r.categories || []).includes(id)).length;
+    const opts = [{ id: "all", name: "All resources" }, ...S.categories];
+    $("#cats").replaceChildren(...opts.map(c => h("button", { type: "button", "aria-pressed": String(S.cat === c.id), onclick: () => { S.cat = c.id; renderAll(); } },
+      h("span", {}, c.name), h("span", { class: "n" }, cnt(c.id)))));
+    const sel = $("#catSel");
+    sel.replaceChildren(...opts.map(c => h("option", { value: c.id }, c.name + " (" + cnt(c.id) + ")")));
+    sel.value = S.cat;
+  }
+  function highlight(text, terms) {
+    text = String(text || "");
+    const ts = terms.filter(t => t.length > 1 && !/^\d+$/.test(t)).map(t => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+    if (!ts.length) return [text];
+    const re = new RegExp("(" + ts.join("|") + ")", "ig");
+    return text.split(re).map((p, i) => i % 2 ? h("mark", {}, p) : p);
+  }
+  function copyBtn(value) {
+    const b = h("button", { type: "button", "aria-label": "Copy " + value }, "Copy");
+    b.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(value); b.textContent = "Copied"; }
+      catch (e) { const r = document.createRange(); r.selectNodeContents(b.previousSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected"; }
+      setTimeout(() => (b.textContent = "Copy"), 1500);
+    });
+    return b;
+  }
+  function card(r, terms) {
+    const cm = catMap();
+    const badges = [];
+    if (r.suggestion) badges.push(h("span", { class: "b sg" }, "Suggestion: not yet verified"));
+    if (r.hidden) badges.push(h("span", { class: "b hid" }, "Hidden from volunteers"));
+    if ((r.categories || []).includes("pes")) badges.push(h("span", { class: "b ref" }, "Referral only: do not call"));
+    if (r.is247) badges.push(h("span", { class: "b h24" }, "24/7"));
+    if (r.goesToCaller === true) badges.push(h("span", { class: "b out" }, "Goes to caller (with police)"));
+    if (r.goesToCaller === false) badges.push(h("span", { class: "b" }, "Does not go to caller"));
+    for (const c of r.counties || []) badges.push(h("span", { class: "b" }, c === "Statewide" || c === "National" ? c : c + " County"));
+    if (r.ages) badges.push(h("span", { class: "b" }, "Ages " + r.ages));
+    const contacts = [...(r.phones || []).map(p => h("span", { class: "num" }, h("span", { class: "lbl" }, p.label || "Call"), h("span", { class: "v" }, p.number), copyBtn(p.number))),
+      ...(r.texts || []).map(t => h("span", { class: "num" }, h("span", { class: "lbl" }, t.label || "Text"), h("span", { class: "v" }, t.value), copyBtn(t.value)))];
+    const meta = [];
+    if (r.hours) meta.push(h("dt", {}, "Hours"), h("dd", {}, r.hours));
+    if (r.address) meta.push(h("dt", {}, "Address"), h("dd", {}, r.address));
+    if (r.website) meta.push(h("dt", {}, "Website"), h("dd", {}, h("a", { href: /^https?:/.test(r.website) ? r.website : "https://" + r.website, target: "_blank", rel: "noopener" }, r.website.replace(/^https?:\/\/(www\.)?/, ""))));
+    if (r.cost) meta.push(h("dt", {}, "Cost"), h("dd", {}, r.cost));
+    return h("article", { class: "card" + (r.suggestion ? " sugg" : "") },
+      h("h3", {}, highlight(r.name, terms)),
+      badges.length ? h("div", { class: "badges" }, badges) : null,
+      r.description ? h("p", { class: "desc" }, highlight(r.description, terms)) : null,
+      r.notes ? h("p", { class: "warnline" }, r.notes) : null,
+      contacts.length ? h("div", { class: "contacts" }, contacts) : null,
+      meta.length ? h("dl", { class: "meta" }, meta) : null,
+      h("div", { class: "src" }, h("span", {}, "Source: " + (r.source || "Added by staff") + " · " + (r.categories || []).map(c => cm[c]?.name).filter(Boolean).join(", ")),
+        S.admin ? h("button", { type: "button", class: "editlink", onclick: () => openEditor(r.id) }, "Edit") : null));
+  }
+  function renderTopics(show) {
+    $("#home").hidden = !show;
+    if (!show) return;
+    const visible = S.resources.filter(r => !r.hidden || S.admin);
+    $("#topics").replaceChildren(...S.categories.map(c => h("button", { type: "button", class: /^crisis/.test(c.id) ? "crit" : null, onclick: () => { S.cat = c.id; renderAll(); window.scrollTo(0, 0); } },
+      c.name, h("span", {}, ((n) => n + (n === 1 ? " resource" : " resources"))(visible.filter(r => (r.categories || []).includes(c.id)).length)))));
+  }
+  function renderResults() {
+    const q = norm($("#q").value).trim(), terms = q.split(/\s+/).filter(Boolean);
+    renderTopics(!q && S.cat === "all");
+    $("#clearQ").hidden = !q;
+    const list = filtered();
+    $("#count").textContent = list.length + (list.length === 1 ? " resource" : " resources");
+    const out = $("#results");
+    if (!list.length) { out.replaceChildren(h("div", { class: "empty" }, "Nothing matches that search. Try fewer words, another county, or turn off the 24/7 filter.")); return; }
+    if (terms.length) {
+      list.sort((a, b) => b.s - a.s || byOrder(a.r, b.r));
+      out.replaceChildren(h("div", { class: "cards" }, list.map(x => card(x.r, terms))));
+      return;
+    }
+    const groups = [];
+    for (const c of S.categories) {
+      if (S.cat !== "all" && S.cat !== c.id) continue;
+      const rs = list.filter(x => (x.r.categories || [])[0] === c.id || (S.cat === c.id && (x.r.categories || []).includes(c.id))).map(x => x.r).sort(byOrder);
+      if (!rs.length) continue;
+      groups.push(h("section", { class: "group" }, h("h2", {}, c.name, h("span", { class: "muted", style: "font:400 14px var(--body)" }, rs.length)),
+        c.description ? h("p", { class: "gdesc" }, c.description) : null, h("div", { class: "cards" }, rs.map(r => card(r, [])))));
+    }
+    const orphan = list.filter(x => !(x.r.categories || []).some(c => catMap()[c])).map(x => x.r);
+    if (orphan.length && S.cat === "all") groups.push(h("section", { class: "group" }, h("h2", {}, "Uncategorized"), h("div", { class: "cards" }, orphan.map(r => card(r, [])))));
+    out.replaceChildren(...groups);
+  }
+
+  // ---------- admin ----------
+  const field = (label, input, hint) => h("label", { class: "f" }, label, hint ? h("span", { class: "hint" }, hint) : null, input);
+  const status = (el, msg, kind) => { el.textContent = msg; el.className = "status " + (kind || ""); };
+  async function save(path, id, data, statusEl, done) {
+    try {
+      status(statusEl, "Saving…");
+      await db.collection(path).doc(id).set(data);
+      status(statusEl, "Saved. Volunteers see the change right away.", "good");
+      done && done();
+    } catch (e) {
+      status(statusEl, e.code === "invalid_argument" ? "Only staff can make changes. Sign out and sign in with the staff password." : "Could not save (" + e.code + "). Try again.", "err");
+    }
+  }
+  async function remove(path, id, statusEl, done) {
+    try { await db.collection(path).doc(id).delete(); done && done(); }
+    catch (e) { status(statusEl, "Could not delete (" + e.code + ").", "err"); }
+  }
+  const slugify = s => (String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50) || "item") + "-" + Math.random().toString(36).slice(2, 6);
+
+  function pairsEditor(legend, rows, ph1, ph2) {
+    const box = h("fieldset", {}, h("legend", {}, legend));
+    const list = h("div", { style: "display:grid;gap:6px" });
+    const add = (a = "", b = "") => {
+      const row = h("div", { class: "pair" }, h("input", { value: a, placeholder: ph1, "aria-label": legend + " label" }), h("input", { value: b, placeholder: ph2, "aria-label": legend + " value" }),
+        h("button", { type: "button", class: "btn small", onclick: () => row.remove() }, "Remove"));
+      list.append(row);
+    };
+    (rows || []).forEach(r => add(...r));
+    box.append(list, h("button", { type: "button", class: "btn small", style: "justify-self:start", onclick: () => add() }, "+ Add"));
+    box.read = () => [...list.children].map(r => [...r.querySelectorAll("input")].map(i => i.value.trim())).filter(([a, b]) => b);
+    return box;
+  }
+
+  function openEditor(id) {
+    S.admin = true; S.tab = "resources"; S.editing = id || "new";
+    setMode("admin");
+  }
+
+  function resourceForm(r) {
+    const isNew = !r; r = r || { categories: [S.cat !== "all" ? S.cat : (S.categories[0]?.id || "")], counties: ["Statewide"], phones: [], texts: [], tags: [], suggestion: false, is247: false, order: 99 };
+    const st = h("p", { class: "status", role: "status" });
+    const name = h("input", { id: "f-name", value: r.name || "", required: true });
+    const desc = h("textarea", { id: "f-desc" }); desc.value = r.description || "";
+    const notes = h("textarea", { id: "f-notes", style: "min-height:60px" }); notes.value = r.notes || "";
+    const hours = h("input", { id: "f-hours", value: r.hours || "" });
+    const addr = h("input", { id: "f-addr", value: r.address || "" });
+    const web = h("input", { id: "f-web", value: r.website || "" });
+    const ages = h("input", { id: "f-ages", value: r.ages || "" });
+    const cost = h("input", { id: "f-cost", value: r.cost || "" });
+    const tags = h("input", { id: "f-tags", value: (r.tags || []).join(", ") });
+    const src = h("input", { id: "f-src", value: r.source || "" });
+    const order = h("input", { id: "f-order", type: "number", value: r.order ?? 0 });
+    const outreach = h("select", { id: "f-out" }, h("option", { value: "" }, "Not applicable"), h("option", { value: "yes" }, "Yes, goes to the caller"), h("option", { value: "no" }, "No"));
+    outreach.value = r.goesToCaller === true ? "yes" : r.goesToCaller === false ? "no" : "";
+    const phones = pairsEditor("Phone numbers", (r.phones || []).map(p => [p.label, p.number]), "Label (e.g. Main)", "Number");
+    const texts = pairsEditor("Text lines", (r.texts || []).map(t => [t.label, t.value]), "Label (e.g. Text)", "What to text, and where");
+    const catBoxes = S.categories.map(c => h("label", {}, h("input", { type: "checkbox", value: c.id, checked: (r.categories || []).includes(c.id) }), c.name));
+    const areaList = ["Statewide", "National", ...counties()];
+    const cntBoxes = areaList.map(c => h("label", {}, h("input", { type: "checkbox", value: c, checked: (r.counties || []).includes(c) }), c));
+    const flags = { is247: h("input", { type: "checkbox", checked: !!r.is247 }), suggestion: h("input", { type: "checkbox", checked: !!r.suggestion }), hidden: h("input", { type: "checkbox", checked: !!r.hidden }) };
+    const confirmBox = h("div", { class: "confirm", hidden: true },
+      h("span", {}, "Delete this resource for everyone? This cannot be undone."),
+      h("button", { type: "button", class: "btn danger small", onclick: () => remove("resources", r.id, st, () => { S.editing = null; renderAdmin(); }) }, "Yes, delete"),
+      h("button", { type: "button", class: "btn small", onclick: () => (confirmBox.hidden = true) }, "Cancel"));
+    const form = h("form", { class: "edit", onsubmit: e => {
+      e.preventDefault();
+      if (!name.value.trim()) { status(st, "Give the resource a name.", "err"); return; }
+      const cats = catBoxes.map(l => l.querySelector("input")).filter(i => i.checked).map(i => i.value);
+      if (!cats.length) { status(st, "Pick at least one category.", "err"); return; }
+      const data = {
+        name: name.value.trim(), description: desc.value.trim(), notes: notes.value.trim(), hours: hours.value.trim(), address: addr.value.trim(),
+        website: web.value.trim(), ages: ages.value.trim(), cost: cost.value.trim(), source: src.value.trim() || "Added by staff",
+        tags: tags.value.split(",").map(t => t.trim()).filter(Boolean), order: Number(order.value) || 0,
+        categories: cats, counties: cntBoxes.map(l => l.querySelector("input")).filter(i => i.checked).map(i => i.value),
+        phones: phones.read().map(([label, number]) => ({ label, number })), texts: texts.read().map(([label, value]) => ({ label, value })),
+        goesToCaller: outreach.value === "yes" ? true : outreach.value === "no" ? false : null,
+        is247: flags.is247.checked, suggestion: flags.suggestion.checked, hidden: flags.hidden.checked, updatedAt: new Date().toISOString(),
+      };
+      const id = isNew ? slugify(data.name) : r.id;
+      save("resources", id, data, st, () => { if (isNew) { S.editing = id; setTimeout(renderAdmin, 600); } });
+    } },
+      h("div", { class: "adminhead" }, h("h2", { style: "font-size:20px" }, isNew ? "Add a resource" : "Edit resource"),
+        h("button", { type: "button", class: "btn", onclick: () => { S.editing = null; renderAdmin(); } }, "Back to list")),
+      field("Name", name),
+      field("Description", desc, "What it is and who it helps, in plain words."),
+      field("Important note for volunteers", notes, "Shown in a highlighted box. Use for rules like 'Referral only'."),
+      h("div", { class: "fgrid" }, phones, texts),
+      h("div", { class: "fgrid" }, field("Hours", hours), field("Ages", ages, "e.g. 18+, Under 21"), field("Cost", cost), field("Website", web)),
+      field("Address", addr),
+      h("fieldset", {}, h("legend", {}, "Categories"), h("div", { class: "checks" }, catBoxes)),
+      h("fieldset", {}, h("legend", {}, "Where it serves"), h("div", { class: "checks" }, cntBoxes)),
+      h("div", { class: "fgrid" }, field("Goes to the caller?", outreach, "For mobile outreach services."), field("Search words", tags, "Comma separated, e.g. teens, grief"),
+        field("Source", src, "Where this information came from."), field("Sort position", order, "Lower numbers appear first in the category.")),
+      h("div", { class: "checks" },
+        h("label", {}, flags.is247, "Open 24/7"),
+        h("label", {}, flags.suggestion, "Mark as a suggestion (not yet verified by staff)"),
+        h("label", {}, flags.hidden, "Hide from volunteers")),
+      h("div", { class: "adminbar" }, h("button", { type: "submit", class: "btn primary" }, isNew ? "Add resource" : "Save changes"),
+        !isNew ? h("button", { type: "button", class: "btn danger", onclick: () => (confirmBox.hidden = false) }, "Delete") : null, st),
+      confirmBox);
+    return h("div", { class: "panel" }, form);
+  }
+
+  function resourcesTab() {
+    if (S.editing) return resourceForm(S.editing === "new" ? null : S.resources.find(r => r.id === S.editing));
+    const cm = catMap();
+    const q = h("input", { id: "adminQ", type: "search", placeholder: "Filter by name", value: store("adminQ") || "" });
+    const list = h("div", { class: "adminlist" });
+    const draw = () => {
+      store("adminQ", q.value);
+      const t = norm(q.value);
+      list.replaceChildren(...S.resources.filter(r => !t || norm(r.name).includes(t)).sort((a, b) => ((cm[a.categories?.[0]]?.order ?? 99) - (cm[b.categories?.[0]]?.order ?? 99)) || byOrder(a, b)).map(r =>
+        h("div", { class: "row" }, h("div", { class: "t" }, r.name, h("small", {}, (r.categories || []).map(c => cm[c]?.name || c).join(", ") + (r.suggestion ? " · Suggestion" : "") + (r.hidden ? " · Hidden" : ""))),
+          h("button", { type: "button", class: "btn small", onclick: () => { S.editing = r.id; renderAdmin(); } }, "Edit"))));
+    };
+    q.addEventListener("input", draw); draw();
+    return h("div", { class: "panel", style: "display:grid;gap:12px" },
+      h("div", { class: "adminbar" }, q, h("button", { type: "button", class: "btn primary", onclick: () => { S.editing = "new"; renderAdmin(); } }, "+ Add a resource")),
+      h("p", { class: "muted", style: "margin:0;font-size:14px" }, S.resources.length + " resources, " + S.resources.filter(r => r.suggestion).length + " marked as suggestions."), list);
+  }
+
+  function simpleListTab(kind) {
+    // kind: categories | notices
+    const rows = kind === "categories" ? S.categories : S.notices;
+    const wrap = h("div", { class: "panel", style: "display:grid;gap:14px" });
+    const mk = item => {
+      const isNew = !item; item = item || { order: rows.length, level: "info" };
+      const st = h("p", { class: "status", role: "status" });
+      const t = h("input", { value: (kind === "categories" ? item.name : item.title) || "" });
+      const d = h("textarea", { style: "min-height:60px" }); d.value = (kind === "categories" ? item.description : item.body) || "";
+      const o = h("input", { type: "number", value: item.order ?? 0 });
+      const lvl = h("select", {}, h("option", { value: "critical" }, "Red: a rule volunteers must follow"), h("option", { value: "info" }, "Plain: helpful information"));
+      lvl.value = item.level || "info";
+      const hid = h("input", { type: "checkbox", checked: !!item.hidden });
+      const ban = h("input", { value: item.banner || "" });
+      const used = kind === "categories" && !isNew ? S.resources.filter(r => (r.categories || []).includes(item.id)).length : 0;
+      const conf = h("div", { class: "confirm", hidden: true }, h("span", {}, used ? `Delete this category? ${used} resources use it; they stay, but lose this category.` : "Delete this for everyone?"),
+        h("button", { type: "button", class: "btn danger small", onclick: () => remove(kind, item.id, st, () => renderAdmin()) }, "Yes, delete"),
+        h("button", { type: "button", class: "btn small", onclick: () => (conf.hidden = true) }, "Cancel"));
+      return h("form", { class: "edit", style: "border-top:1px solid var(--line);padding-top:12px", onsubmit: e => {
+        e.preventDefault();
+        if (!t.value.trim()) { status(st, "Add a name first.", "err"); return; }
+        const data = kind === "categories" ? { name: t.value.trim(), description: d.value.trim(), order: Number(o.value) || 0 }
+          : { title: t.value.trim(), body: d.value.trim(), banner: ban.value.trim(), level: lvl.value, order: Number(o.value) || 0, hidden: hid.checked };
+        save(kind, isNew ? slugify(t.value) : item.id, data, st);
+      } },
+        h("div", { class: "fgrid" }, field(kind === "categories" ? "Category name" : "Headline", t), field("Order", o, "Lower numbers come first.")),
+        field(kind === "categories" ? "Short description" : "Message", d),
+        kind === "notices" ? field("Banner text", ban, "Red notices also show in the dark bar at the very top, after the headline. Keep it to one short sentence.") : null,
+        kind === "notices" ? h("div", { class: "fgrid" }, field("Style", lvl), h("div", { class: "checks", style: "align-self:end" }, h("label", {}, hid, "Hide this notice"))) : null,
+        h("div", { class: "adminbar" }, h("button", { type: "submit", class: "btn primary" }, isNew ? "Add" : "Save"),
+          !isNew ? h("button", { type: "button", class: "btn danger", onclick: () => (conf.hidden = false) }, "Delete") : null, st), conf);
+    };
+    wrap.append(h("p", { class: "muted", style: "margin:0" }, kind === "categories" ? "Categories group resources on the main page and in the side list." : "Notices appear at the top of the main page, above the search results."),
+      ...rows.map(mk), h("h3", { style: "font-size:16px;margin-top:8px" }, kind === "categories" ? "Add a category" : "Add a notice"), mk(null));
+    return wrap;
+  }
+
+  function siteTab() {
+    const s = S.site || {};
+    const st = h("p", { class: "status", role: "status" });
+    const t = h("input", { value: s.title || "" }), sub = h("input", { value: s.subtitle || "" });
+    const foot = h("textarea", { style: "min-height:60px" }); foot.value = s.footer || "";
+    const cn = h("textarea", {}); cn.value = counties().join("\n");
+    return h("div", { class: "panel" }, h("form", { class: "edit", onsubmit: e => {
+      e.preventDefault();
+      save("settings", "site", { title: t.value.trim(), subtitle: sub.value.trim(), footer: foot.value.trim(), counties: cn.value.split("\n").map(x => x.trim()).filter(Boolean) }, st);
+    } }, field("Page title", t), field("Subtitle", sub), field("Footer note", foot, "e.g. when the guide was last updated."),
+      field("Counties", cn, "One per line. These fill the county filter."),
+      h("div", { class: "adminbar" }, h("button", { type: "submit", class: "btn primary" }, "Save"), st)));
+  }
+
+  function renderAdmin() {
+    const v = $("#adminView");
+    const tabs = [["resources", "Resources"], ["categories", "Categories"], ["notices", "Notices"], ["site", "Page text"]];
+    v.replaceChildren(h("div", { class: "admin" },
+      h("p", { class: "muted", style: "margin:0" }, "Changes save for everyone as soon as you press Save. Only people who signed in with the staff password can make changes."),
+      h("div", { class: "tabs" }, tabs.map(([id, label]) => h("button", { type: "button", "aria-pressed": String(S.tab === id), onclick: () => { S.tab = id; S.editing = null; renderAdmin(); } }, label))),
+      S.tab === "resources" ? resourcesTab() : S.tab === "site" ? siteTab() : simpleListTab(S.tab)));
+  }
+
+  function setMode(m) {
+    $("#findView").hidden = m !== "find"; $("#adminView").hidden = m !== "admin";
+    $("#modeFind").setAttribute("aria-pressed", String(m === "find")); $("#modeAdmin").setAttribute("aria-pressed", String(m === "admin"));
+    if (m === "admin") renderAdmin(); else renderResults();
+    window.scrollTo(0, 0);
+  }
+
+  let footEl = null;
+  function renderAll() {
+    if (!["resources", "categories"].every(k => S.loaded.has(k))) return;
+    if (S.site) { $("#siteTitle").textContent = S.site.title || "Resource Finder"; $("#siteSub").textContent = S.site.subtitle || ""; }
+    if (S.site?.footer) { footEl = footEl || document.querySelector(".wrap").appendChild(h("p", { class: "muted", style: "font-size:13px;margin-top:24px" })); footEl.textContent = S.site.footer; }
+    renderNotices(); renderFilters();
+    if (!$("#adminView").hidden) { if (S.tab !== "resources" || !S.editing) renderAdmin(); }
+    else renderResults();
+  }
+
+  // ---------- events ----------
+  let tmr;
+  $("#q").addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(renderResults, 80); });
+  $("#clearQ").addEventListener("click", () => { $("#q").value = ""; renderResults(); $("#q").focus(); });
+  $("#catSel").addEventListener("change", e => { S.cat = e.target.value; renderAll(); });
+  for (const id of ["#countySel", "#ageSel", "#only247", "#showSugg"]) $(id).addEventListener("change", () => { store("f" + id, $(id).type === "checkbox" ? $(id).checked : $(id).value); renderResults(); });
+  $("#modeFind").addEventListener("click", () => setMode("find"));
+  $("#modeAdmin").addEventListener("click", () => setMode("admin"));
+  const sc = store("f#showSugg"); if (sc != null) $("#showSugg").checked = sc === "true";
+  const s24 = store("f#only247"); if (s24 != null) $("#only247").checked = s24 === "true";
+
+  // ---------- server connection ----------
+  // Mirrors the small slice of a realtime document store the page was written against:
+  // collection(name).onSnapshot(cb) and collection(name).doc(id).set()/delete().
+  function makeDb() {
+    const subs = {}, errs = [];
+    let timer = null;
+    async function refresh() {
+      let res;
+      try { res = await fetch("/api/data", { headers: { "X-Requested-With": "fetch" } }); }
+      catch (e) { return; }
+      if (res.status === 401) { location.href = "/login"; return; }
+      if (!res.ok) { errs.forEach(f => f({ code: "unavailable" })); return; }
+      const data = await res.json();
+      for (const [c, cbs] of Object.entries(subs)) {
+        const docs = (data[c] || []).map(x => ({ id: x.id, exists: true, data: () => x.data }));
+        cbs.forEach(cb => cb({ docs }));
+      }
+    }
+    function schedule() { clearTimeout(timer); timer = setTimeout(refresh, 0); }
+    setInterval(() => { if (!document.hidden) refresh(); }, 60000);
+    async function write(method, c, id, data) {
+      const res = await fetch("/api/" + c + "/" + encodeURIComponent(id), {
+        method, headers: { "Content-Type": "application/json", "X-Requested-With": "fetch" }, body: data ? JSON.stringify(data) : undefined });
+      if (res.status === 401) { location.href = "/login"; return; }
+      if (!res.ok) throw { code: res.status === 403 ? "invalid_argument" : "unavailable" };
+      await refresh();
+    }
+    return {
+      collection: c => ({
+        onSnapshot(cb, err) { (subs[c] = subs[c] || []).push(cb); if (err) errs.push(err); schedule(); return () => {}; },
+        doc: id => ({ set: data => write("PUT", c, id, data), delete: () => write("DELETE", c, id) }),
+      }),
+    };
+  }
+
+  // ---------- boot ----------
+  (async () => {
+    db = makeDb();
+    subscribe("resources", "resources"); subscribe("categories", "categories"); subscribe("notices", "notices"); subscribe("settings", "site");
+    let me = {};
+    try { me = await (await fetch("/api/me")).json(); } catch (e) {}
+    if (me.role === "admin") { S.admin = true; $("#modeSwitch").hidden = false; renderAll(); }
+  })();
+})();
+</script>
+</body>
+</html>

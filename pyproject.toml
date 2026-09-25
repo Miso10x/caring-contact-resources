@@ -1,0 +1,12 @@
+[project]
+name = "caring-contact-resources"
+version = "0.1.0"
+description = "Password-protected New Jersey resource finder for Caring Contact volunteers"
+requires-python = ">=3.12"
+dependencies = ["flask>=3.0", "gunicorn>=22.0"]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

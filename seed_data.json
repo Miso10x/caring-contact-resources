@@ -1,0 +1,4559 @@
+{
+ "resources": {
+  "alternatives-child-protection-and-permanency-cp-p": {
+   "categories": [
+    "alternatives",
+    "child-family"
+   ],
+   "name": "Child Protection and Permanency (CP&P)",
+   "description": "New Jersey's child protection and child welfare agency. Investigates allegations of child abuse and neglect and, if needed, arranges for the child's protection and the family's treatment.",
+   "phones": [],
+   "texts": [],
+   "website": "https://www.nj.gov/dcf/about/divisions/dcpp",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "child welfare",
+    "DCF"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "alternatives-cop-2-cop": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "Cop 2 Cop",
+   "description": "Peer support line for New Jersey law enforcement officers and their families, answered by retired officers and clinicians.",
+   "phones": [
+    {
+     "label": "Cop 2 Cop",
+     "number": "1-866-267-2267"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.ubhc.rutgers.edu/clinical/cop2cop/",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "first responders",
+    "peer support"
+   ],
+   "order": 8,
+   "hidden": false
+  },
+  "alternatives-crisis-respite-drop-in-centers-and-crisis-stabi": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "Crisis respite, drop-in centers and crisis stabilization units",
+   "description": "In development in New Jersey by DMHAS (Division of Mental Health and Addiction Services). No locations to refer to yet.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "in development"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "alternatives-legacy-crisis-house-burlington-county": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "Legacy Crisis House (Burlington County)",
+   "description": "Crisis Home Program: a short-term residential program offering an alternative to inpatient psychiatric hospitalization for people in psychiatric crisis. Staffed 24/7. Works to stabilize people within the community.",
+   "phones": [
+    {
+     "label": "Legacy Crisis House",
+     "number": "(609) 261-3034"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Burlington"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "crisis home",
+    "crisis residential"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "alternatives-nami-peer-support": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "NAMI peer support",
+   "description": "Peer support services through the National Alliance on Mental Illness.",
+   "phones": [
+    {
+     "label": "NAMI",
+     "number": "(800) 950-6264"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "peer support"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "alternatives-nj-crisis-intervention-response-network-njcirn": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "NJ Crisis Intervention Response Network (NJCIRN)",
+   "description": "Active and retired police, fire and rescue personnel act as trained peer support counselors. The network coordinates teams covering the whole state.",
+   "phones": [
+    {
+     "label": "NJCIRN",
+     "number": "(609) 394-3600"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "first responders",
+    "peer support"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "alternatives-oaks-crisis-house-camden-county": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "Oaks Crisis House (Camden County)",
+   "description": "Crisis Home Program: a short-term residential program offering an alternative to inpatient psychiatric hospitalization for people in psychiatric crisis. Staffed 24/7. Works to stabilize people within the community.",
+   "phones": [
+    {
+     "label": "Oaks Crisis House",
+     "number": "(856) 427-6584"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Camden"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "crisis home",
+    "crisis residential"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "alternatives-st-mary-s-crisis-house-passaic-county": {
+   "categories": [
+    "alternatives"
+   ],
+   "name": "St. Mary's Crisis House (Passaic County)",
+   "description": "Crisis Home Program: a short-term residential program offering an alternative to inpatient psychiatric hospitalization for people in psychiatric crisis. Staffed 24/7. Works to stabilize people within the community.",
+   "phones": [
+    {
+     "label": "St. Mary's Crisis House",
+     "number": "(973) 471-6907"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Passaic"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "crisis home",
+    "crisis residential"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "ccbhc-atlanticare-behavioral-health": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "AtlantiCare Behavioral Health",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(609) 646-9159"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Atlantic"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 0,
+   "hidden": false
+  },
+  "ccbhc-care-plus-nj-inc": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "Care Plus NJ, Inc.",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(201) 986-5000"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Bergen",
+    "Essex"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "ccbhc-catholic-charities-diocese-of-trenton": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "Catholic Charities Diocese of Trenton",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(800) 360-7711"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Mercer"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "ccbhc-cpc-integrated-health": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "CPC Integrated Health",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(800) 250-9811"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "ccbhc-northwest-essex-community-healthcare-network": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "Northwest Essex Community Healthcare Network",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(973) 450-3100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Essex"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "ccbhc-oaks-integrated-care": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "Oaks Integrated Care",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(609) 845-3200"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Mercer"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "ccbhc-rutgers-university-behavioral-health-care": {
+   "categories": [
+    "ccbhc"
+   ],
+   "name": "Rutgers University Behavioral Health Care",
+   "description": "Certified Community Behavioral Health Clinic. Serves everyone who seeks help, and will not refuse anyone based on ability to pay or where they live. A county may be served by more than one CCBHC.",
+   "phones": [
+    {
+     "label": "Access line",
+     "number": "(800) 969-5300"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Middlesex",
+    "Essex",
+    "Camden"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "NJ DMHAS CCBHC access line list",
+   "suggestion": false,
+   "tags": [
+    "CCBHC",
+    "mobile crisis"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "child-family-catastrophic-illness-in-children-relief-fund": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "Catastrophic Illness in Children Relief Fund",
+   "description": "Financial help for New Jersey families whose child's illness or condition is not otherwise covered by insurance, state or federal programs, or other sources.",
+   "phones": [
+    {
+     "label": "CICRF",
+     "number": "1-800-335-3863"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.nj.gov/humanservices/cicrf",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "financial help",
+    "medical bills"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "child-family-childhelp-national-child-abuse-hotline": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "Childhelp National Child Abuse Hotline",
+   "description": "Professional crisis counselors and translators providing help and emergency/social service referrals in over 170 languages.",
+   "phones": [
+    {
+     "label": "Childhelp",
+     "number": "1-800-422-4453"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "abuse",
+    "multilingual"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "child-family-covenant-house": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "Covenant House",
+   "description": "Helps youth ages 18 to 21 facing homelessness, and human trafficking survivors of all ages. Free.",
+   "phones": [
+    {
+     "label": "North Jersey",
+     "number": "973-621-8705"
+    },
+    {
+     "label": "South Jersey",
+     "number": "609-348-4070"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "844-912-1291"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18-21 (trafficking survivors: all ages)",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "homeless youth",
+    "trafficking"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "child-family-national-runaway-safeline": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "National Runaway Safeline",
+   "description": "Crisis hotline and judgment-free space for runaway and homeless young people.",
+   "phones": [
+    {
+     "label": "Safeline",
+     "number": "1-800-786-2929"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "runaway",
+    "homeless youth"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "child-family-national-teen-dating-abuse-hotline-love-is-resp": {
+   "categories": [
+    "child-family",
+    "dv"
+   ],
+   "name": "National Teen Dating Abuse Hotline (love is respect)",
+   "description": "Support, education and advocacy for teens and young adults, and their friends and family, with questions or concerns about dating and relationships.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-866-331-9474"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "'LOVEIS' to 22522"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "teens",
+    "dating abuse"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "child-family-nj-child-abuse-hotline": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "NJ Child Abuse Hotline",
+   "description": "For reporting child abuse or neglect. Children can call this line. Offers screening and resources.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-877-652-2873"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "abuse",
+    "report"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "child-family-performcare-children-and-families": {
+   "categories": [
+    "child-family"
+   ],
+   "name": "PerformCare (children and families)",
+   "description": "For parents and guardians of children under 21: in-home counseling, behavioral supports, mobile crisis response, substance use treatment, care management, LGBTQIA+ support and more.",
+   "phones": [
+    {
+     "label": "PerformCare",
+     "number": "1-877-652-7624"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Under 21",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "parents",
+    "LGBTQIA+"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "crisis-adults-988-suicide-crisis-lifeline": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "988 Suicide & Crisis Lifeline",
+   "description": "National crisis line for anyone in suicidal crisis or emotional distress. Call or text 988, or chat at 988lifeline.org. Spanish available. Callers in New Jersey are routed to NJ crisis centers.",
+   "phones": [
+    {
+     "label": "Call",
+     "number": "988"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "988"
+    }
+   ],
+   "website": "https://988lifeline.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "suicide",
+    "crisis",
+    "Spanish"
+   ],
+   "order": 0,
+   "hidden": false
+  },
+  "crisis-adults-ccbhcs-certified-community-behavioral-health-c": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "CCBHCs (Certified Community Behavioral Health Clinics) 24/7 Mobile Crisis",
+   "description": "Community-based mental health and substance use services, especially valuable for people with serious mental illness, severe substance use disorders, children and teens with serious emotional disturbance, and people with co-occurring conditions. Designed to work within Medicaid, but will not refuse anyone based on ability to pay or where they live. See the CCBHC listings for access line numbers.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "Will not refuse for inability to pay",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "mobile crisis",
+    "CCBHC"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "crisis-adults-crisis-text-line": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "Crisis Text Line",
+   "description": "Free text-based crisis support with trained volunteer counselors.",
+   "phones": [],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "HOME to 741741"
+    }
+   ],
+   "website": "https://www.crisistextline.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "Free",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "text",
+    "crisis"
+   ],
+   "order": 9,
+   "hidden": false
+  },
+  "crisis-adults-eiss-early-intervention-support-services": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "EISS (Early Intervention Support Services)",
+   "description": "Short-term mental health services for adults in significant emotional or psychiatric distress who need immediate help. An alternative to the hospital emergency room. Outreach available. Usually a walk-in, an intake, and meeting a clinician (and psychiatrist if medication is needed). Can refer on for further support. See EISS listings by county.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "Usually regular business hours",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "crisis-adults-nj-hopeline": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "NJ Hopeline",
+   "description": "New Jersey's peer support and suicide prevention hotline, run by Rutgers University Behavioral Health Care for the NJ Department of Children and Families.",
+   "phones": [
+    {
+     "label": "Hopeline",
+     "number": "1-855-654-6735"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.njhopeline.com",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "suicide",
+    "peer support"
+   ],
+   "order": 10,
+   "hidden": false
+  },
+  "crisis-adults-overlook-medical-center-empath-unit": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "Overlook Medical Center EMPATH Unit",
+   "description": "Crisis intervention, stabilization and treatment, for anything from a panic attack to suicidal thoughts. Located in the Overlook Hospital Emergency Department. Must be 18 or older, but can come from anywhere.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "99 Beauvoir Ave, Summit, NJ",
+   "counties": [
+    "Union"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Walk-in only. No transport.",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "emergency department"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "crisis-adults-pes-nj-psychiatric-screening-centers": {
+   "categories": [
+    "crisis-adults"
+   ],
+   "name": "PES (NJ Psychiatric Screening Centers)",
+   "description": "Assessment, emergency and referral services for people in acute psychiatric distress or after a traumatic incident. Centers that offer mobile outreach only do so within their own county. See the PES listings by county.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "WE DO NOT CALL PES. Callers can call PES directly. PES ALWAYS arrives with the police.",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "crisis-idd-cares-crisis-assessment-response-and-enhanced-ser": {
+   "categories": [
+    "crisis-idd"
+   ],
+   "name": "CARES (Crisis Assessment Response and Enhanced Services)",
+   "description": "Crisis response and stabilization for up to 120 days for adults 21 and older with intellectual and developmental disabilities. Responds anywhere in New Jersey to help with mental health or behavioral crises. Can prevent unnecessary hospitalizations by managing crises in place, and helps individuals, families and staff get the expertise they need.",
+   "phones": [
+    {
+     "label": "CARES",
+     "number": "1-888-393-3007"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "21+",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "I/DD",
+    "autism",
+    "developmental disability"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "crisis-youth-2ndfloor-youth-helpline": {
+   "categories": [
+    "crisis-youth"
+   ],
+   "name": "2NDFLOOR Youth Helpline",
+   "description": "Confidential, anonymous helpline for New Jersey youth ages 10 to 24, by call or text.",
+   "phones": [
+    {
+     "label": "Call or text",
+     "number": "1-888-222-2228"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.2ndfloor.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "10-24",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "teens",
+    "young adults",
+    "text"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "crisis-youth-ccbhcs-certified-community-behavioral-health-cl": {
+   "categories": [
+    "crisis-youth"
+   ],
+   "name": "CCBHCs (Certified Community Behavioral Health Clinics)",
+   "description": "Same clinics as in adult crisis care; they serve children and adolescents with serious emotional disturbance too. See the CCBHC listings for access line numbers.",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "CCBHC"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "crisis-youth-performcare-mobile-crisis-for-youth": {
+   "categories": [
+    "crisis-youth"
+   ],
+   "name": "PerformCare (mobile crisis for youth)",
+   "description": "Mobile crisis response for people under 21. A parent or legal guardian must consent to mobile response for youth under 18.",
+   "phones": [
+    {
+     "label": "PerformCare",
+     "number": "1-877-652-7624"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Under 21",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "mobile crisis",
+    "children"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "disaster-samhsa-disaster-distress-helpline": {
+   "categories": [
+    "disaster"
+   ],
+   "name": "SAMHSA Disaster Distress Helpline",
+   "description": "Year-round, multilingual crisis counseling for anyone in the U.S. in emotional distress related to natural or human-caused disasters.",
+   "phones": [
+    {
+     "label": "Call or text",
+     "number": "1-800-985-5990"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Deaf / hard of hearing (ASL)",
+     "value": "1-800-985-5990"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "multilingual"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "dv-24-hour-rape-hotline-union-county": {
+   "categories": [
+    "dv"
+   ],
+   "name": "24-hour Rape Hotline (Union County)",
+   "description": "For victims of sexual violence. Explains the rape kit collection process and making a statement.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-908-233-7273"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Union"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "sexual assault",
+    "rape"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "dv-national-domestic-violence-hotline": {
+   "categories": [
+    "dv"
+   ],
+   "name": "National Domestic Violence Hotline",
+   "description": "Information, crisis intervention, referral and advocacy for domestic violence and stalking.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-800-799-7233"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "'START' to 88788"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "stalking"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "dv-national-human-trafficking-hotline": {
+   "categories": [
+    "dv"
+   ],
+   "name": "National Human Trafficking Hotline",
+   "description": "Support for victims of human trafficking.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-888-373-7888"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "233733"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "trafficking"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "dv-nj-domestic-violence-hotline": {
+   "categories": [
+    "dv"
+   ],
+   "name": "NJ Domestic Violence Hotline",
+   "description": "Refers people to local programs for a safe house, counseling and a family court advocate.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-800-572-7233"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "safe house",
+    "shelter"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "dv-partners-for-women-and-justice": {
+   "categories": [
+    "dv",
+    "legal"
+   ],
+   "name": "Partners for Women and Justice",
+   "description": "Free legal help for victims and survivors of domestic violence and sexual assault in New Jersey.",
+   "phones": [
+    {
+     "label": "Partners",
+     "number": "1-973-233-0111"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "732-535-6318"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "legal"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "dv-rainn-rape-abuse-incest-national-network": {
+   "categories": [
+    "dv"
+   ],
+   "name": "RAINN (Rape, Abuse & Incest National Network)",
+   "description": "National line. Directs callers by area code to the nearest support center and services.",
+   "phones": [
+    {
+     "label": "RAINN",
+     "number": "1-800-656-4673"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "sexual assault",
+    "rape"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "dv-stronghearts-native-helpline": {
+   "categories": [
+    "dv"
+   ],
+   "name": "StrongHearts Native Helpline",
+   "description": "Confidential, anonymous domestic and sexual violence helpline for Native Americans and Alaska Natives, with culturally appropriate support and advocacy.",
+   "phones": [
+    {
+     "label": "Helpline",
+     "number": "1-844-762-8483"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "Native American"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "eating-anad-national-association-of-anorexia-nervosa-and-ass": {
+   "categories": [
+    "eating"
+   ],
+   "name": "ANAD (National Association of Anorexia Nervosa and Associated Disorders)",
+   "description": "Free, easy-to-access support and resources for people and families affected by eating disorders, disordered eating or body image concerns.",
+   "phones": [
+    {
+     "label": "ANAD helpline",
+     "number": "1-888-375-7767"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Fri 10am-10pm",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "body image"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "eating-the-alliance-for-eating-disorders-awareness-helpline": {
+   "categories": [
+    "eating"
+   ],
+   "name": "The Alliance for Eating Disorders Awareness Helpline",
+   "description": "Support and resources for people dealing with eating disorders.",
+   "phones": [
+    {
+     "label": "Helpline",
+     "number": "1-866-662-1235"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Fri 9am-9pm",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [],
+   "order": 2,
+   "hidden": false
+  },
+  "eiss-acenda-integrated-health-early-intervention-support-ser": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Acenda Integrated Health Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "856-494-8160"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "200 Hollydell Drive, Sewell, NJ 08080",
+   "counties": [
+    "Gloucester"
+   ],
+   "hours": "Mon-Fri 9am-7pm; Sat-Sun telehealth 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "eiss-acenda-integrated-health": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Acenda Integrated Health",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(609) 778-3020"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "128 Crest Haven, Cape May Court House, NJ 08210",
+   "counties": [
+    "Cape May"
+   ],
+   "hours": "Mon-Fri 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "eiss-atlanticare-behavioral-health-early-intervention-suppor": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "AtlantiCare Behavioral Health Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(609) 348-1161"
+    },
+    {
+     "label": "Toll free",
+     "number": "(866) 750-6612"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "13 N. Hartford Avenue, Atlantic City, NJ 08401",
+   "counties": [
+    "Atlantic"
+   ],
+   "hours": "Mon-Fri 9:30am-7:30pm; Sat 9:30am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 0,
+   "hidden": false
+  },
+  "eiss-bridgeway-behavioral-health-services-crisis-interventio-2": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Bridgeway Behavioral Health Services Crisis Intervention Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Office",
+     "number": "(908) 469-6517"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "615 North Broad Street, Elizabeth, NJ 07202",
+   "counties": [
+    "Union"
+   ],
+   "hours": "Mon-Thu 9am-8pm; Fri 9am-5pm; Sat 10am-6pm; Sun closed (reachable by phone as needed)",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 19,
+   "hidden": false
+  },
+  "eiss-bridgeway-behavioral-health-services-crisis-interventio": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Bridgeway Behavioral Health Services Crisis Intervention Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(201) 885-2539"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "506 3rd Street, Hoboken, NJ 07030",
+   "counties": [
+    "Hudson"
+   ],
+   "hours": "Mon-Fri 9am-8pm; Sat 10am-6pm; Sun closed (reachable by phone if needed)",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 8,
+   "hidden": false
+  },
+  "eiss-bright-harbor-healthcare-crest-community-resource-for-e": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Bright Harbor Healthcare CREST (Community Resource for Emergency Support and Treatment)",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(732) 240-3760"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "409 Main Street, Toms River, NJ 08753",
+   "counties": [
+    "Ocean"
+   ],
+   "hours": "Mon-Fri 8am-8pm; Sat 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 14,
+   "hidden": false
+  },
+  "eiss-catholic-charities-diocese-of-trenton-early-interventio": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Catholic Charities Diocese of Trenton Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(609) 256-4200"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "1225-1255 Whitehorse Mercerville Rd, Building B, Suite 504-505, Hamilton, NJ 08619",
+   "counties": [
+    "Mercer"
+   ],
+   "hours": "Mon-Fri 8am-8pm; Sat-Sun 8am-6pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service. New walk-ins welcome 8am-6pm weekdays and 8am-4pm weekends.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 10,
+   "hidden": false
+  },
+  "eiss-catholic-charities-early-intervention-support-services": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Catholic Charities Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "609-386-7331"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "25 Ikea Drive, Westampton, NJ 08060",
+   "counties": [
+    "Burlington"
+   ],
+   "hours": "7 days a week 8am-8pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "eiss-comprehensive-behavioral-health-services-wellness-and-s-2": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Comprehensive Behavioral Health Services Wellness and Support Center",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(973) 221-8100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "680 Broadway Suite 206, Paterson, NJ 07514; also 1590 Union Valley Rd, Suite 1610-A, West Milford, NJ 07480",
+   "counties": [
+    "Passaic"
+   ],
+   "hours": "Sun, Mon, Thu, Fri 9am-5pm; Tue-Wed 9am-9pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service. Two locations share one phone number.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 15,
+   "hidden": false
+  },
+  "eiss-comprehensive-behavioral-health-services-wellness-and-s": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Comprehensive Behavioral Health Services Wellness and Support Center",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(201) 957-1800"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "569 Broadway, Westwood, NJ 07675",
+   "counties": [
+    "Bergen"
+   ],
+   "hours": "Mon-Thu 8am-8pm; Fri 8am-5pm; Sat-Sun 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "eiss-healthcare-commons-mental-health-urgent-care": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Healthcare Commons Mental Health Urgent Care",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(856) 895-0003 ext. 131"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "500 S. Pennsville-Auburn Road, Carneys Point, NJ 08069",
+   "counties": [
+    "Salem"
+   ],
+   "hours": "Mon-Thu 8:30am-9pm; Fri-Sun 8:30am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 16,
+   "hidden": false
+  },
+  "eiss-monmouth-medical-center-early-intervention-support-serv": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Monmouth Medical Center Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(732) 922-1042"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "West Side Plaza, 3301 Highway 66, Building B, 1st Floor, Neptune, NJ 07753",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "Mon-Thu 8am-7pm; Fri 8am-5pm; Sat 10am-4pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 12,
+   "hidden": false
+  },
+  "eiss-oaks-integrated-care-mental-health-urgent-care-eiss-2": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Oaks Integrated Care Mental Health Urgent Care (EISS)",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(856) 537-2310"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "1420 S. Lincoln Ave., Vineland, NJ 08361",
+   "counties": [
+    "Cumberland"
+   ],
+   "hours": "Mon-Fri 9am-7:30pm; Sat 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "eiss-oaks-integrated-care-mental-health-urgent-care-eiss": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Oaks Integrated Care Mental Health Urgent Care (EISS)",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(856) 254-3800"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "2051 Springdale Road, Cherry Hill, NJ 08003",
+   "counties": [
+    "Camden"
+   ],
+   "hours": "Mon-Fri 9am-8pm; Sat 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "eiss-rutgers-university-behavioral-health-care-branchburg-co": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Rutgers University Behavioral Health Care, Branchburg Commons",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(848) 334-0501"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "3322 Route 22 West, Suite 703 & 704, Branchburg, NJ",
+   "counties": [
+    "Somerset"
+   ],
+   "hours": "Mon-Thu 9am-7pm; Fri 9am-5pm; Sat telehealth only",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 17,
+   "hidden": false
+  },
+  "eiss-rutgers-university-behavioral-health-care-early-interve-2": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Rutgers University Behavioral Health Care Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(732) 235-4422"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "667 Hoes Lane West, Piscataway, NJ 08855",
+   "counties": [
+    "Middlesex"
+   ],
+   "hours": "Mon-Thu 8am-8pm; Fri 8am-5pm; Sat-Sun 8am-4pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 11,
+   "hidden": false
+  },
+  "eiss-rutgers-university-behavioral-health-care-early-interve": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Rutgers University Behavioral Health Care Early Intervention Support Services",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(973) 972-6100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "183 South Orange Avenue, Newark, NJ 07103",
+   "counties": [
+    "Essex"
+   ],
+   "hours": "7 days a week 9am-5pm (Sunday telehealth only)",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "eiss-rutgers-university-behavioral-health-care": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Rutgers University Behavioral Health Care",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(908) 358-6175"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "8 Main Street, Suites 7 & 8, Flemington, NJ 08822",
+   "counties": [
+    "Hunterdon"
+   ],
+   "hours": "Mon-Thu 9am-7pm; Fri 9am-5pm; Sat telehealth only",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 9,
+   "hidden": false
+  },
+  "eiss-saint-clare-s-behavioral-health-wellness-and-recovery-c-2": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Saint Clare's Behavioral Health Wellness and Recovery Center of Warren County",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(908) 477-2100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "140 Boulevard, 2nd Floor, Suite 3, Washington, NJ 07882",
+   "counties": [
+    "Warren"
+   ],
+   "hours": "Mon-Fri 8:30am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 20,
+   "hidden": false
+  },
+  "eiss-saint-clare-s-behavioral-health-wellness-and-recovery-c": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Saint Clare's Behavioral Health Wellness and Recovery Center",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Toll free",
+     "number": "(888) 476-2660"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "56 Morris Avenue, Denville, NJ 07384",
+   "counties": [
+    "Morris"
+   ],
+   "hours": "Mon/Fri/Sat 9am-5pm; Tue/Wed/Thu 9am-8:30pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service.",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 13,
+   "hidden": false
+  },
+  "eiss-wellness-hub-mental-health-association-eiss-sussex": {
+   "categories": [
+    "eiss"
+   ],
+   "name": "Wellness HUB, Mental Health Association (EISS Sussex)",
+   "description": "Short-term crisis intervention and stabilization for adults, as an alternative to the hospital emergency room. Walk-in, intake, clinician, and psychiatrist if medication is needed. Outreach available. Can refer on for further support.",
+   "phones": [
+    {
+     "label": "Main",
+     "number": "(973) 840-1850"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "83 Spring St. Suite 303, Newton, NJ",
+   "counties": [
+    "Sussex"
+   ],
+   "hours": "Mon and Wed 9am-8pm; Thu and Fri 9am-5pm",
+   "is247": false,
+   "ages": "18+",
+   "cost": "Insurance, sliding scale or free",
+   "notes": "Not a 24/7 service. After hours and weekends available by appointment. (Source lists Monday twice; check hours with the center.)",
+   "goesToCaller": null,
+   "source": "EISS list by county (updated 4/21/2025)",
+   "suggestion": false,
+   "tags": [
+    "walk-in",
+    "urgent care"
+   ],
+   "order": 18,
+   "hidden": false
+  },
+  "food-community-foodbank-of-new-jersey": {
+   "categories": [
+    "food"
+   ],
+   "name": "Community FoodBank of New Jersey",
+   "description": "Multilingual food assistance line. Callers can also text to get food information on their phone.",
+   "phones": [
+    {
+     "label": "Food Assistance Line",
+     "number": "908-838-4831"
+    }
+   ],
+   "texts": [
+    {
+     "label": "English",
+     "value": "'FindFood' to 908-224-7776"
+    },
+    {
+     "label": "Spanish",
+     "value": "'Comida' to 908-224-7776"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "Shared during the Nov 2025 federal shutdown when SNAP benefits stopped. Offer at the end of the call where needed.",
+   "goesToCaller": null,
+   "source": "Caring Contact SNAP notice (Nov 2025)",
+   "suggestion": false,
+   "tags": [
+    "food bank",
+    "SNAP",
+    "multilingual",
+    "Spanish"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "food-nj-families-first-ebt-card-help": {
+   "categories": [
+    "food"
+   ],
+   "name": "NJ Families First (EBT card help)",
+   "description": "Check EBT card balances online or by phone.",
+   "phones": [
+    {
+     "label": "EBT help",
+     "number": "1-800-997-3333"
+    }
+   ],
+   "texts": [],
+   "website": "https://NJFamiliesFirst.com",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact SNAP notice (Nov 2025)",
+   "suggestion": false,
+   "tags": [
+    "EBT",
+    "SNAP"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "grief-american-foundation-for-suicide-prevention-afsp": {
+   "categories": [
+    "grief"
+   ],
+   "name": "American Foundation for Suicide Prevention (AFSP)",
+   "description": "Find suicide bereavement (loss survivor) support groups.",
+   "phones": [],
+   "texts": [],
+   "website": "https://afsp.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "Listed in the guide as 'American Society of Suicide Prevention'; the website afsp.org is the American Foundation for Suicide Prevention.",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "suicide loss",
+    "support group"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "grief-gateway-grief-pet-loss": {
+   "categories": [
+    "grief"
+   ],
+   "name": "Gateway Grief (pet loss)",
+   "description": "Support line with trained counselors for anyone grieving the loss of a pet.",
+   "phones": [
+    {
+     "label": "Pet loss line",
+     "number": "1-855-245-8214"
+    }
+   ],
+   "texts": [],
+   "website": "https://gatewayservicesinc.com",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "pet loss"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "grief-goodgrief": {
+   "categories": [
+    "grief"
+   ],
+   "name": "GoodGrief",
+   "description": "Unlimited, free support for children, teens, young adults and families after the death of a parent or sibling, through peer support, education and advocacy.",
+   "phones": [
+    {
+     "label": "GoodGrief",
+     "number": "1-908-522-1999"
+    }
+   ],
+   "texts": [],
+   "website": "https://good-grief.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "children",
+    "teens",
+    "family"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "grief-griefshare": {
+   "categories": [
+    "grief"
+   ],
+   "name": "GriefShare",
+   "description": "A 13-week group where people learn what to expect, coping skills, and get support through grief.",
+   "phones": [],
+   "texts": [],
+   "website": "https://www.griefshare.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "support group"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "grief-imagine": {
+   "categories": [
+    "grief"
+   ],
+   "name": "Imagine",
+   "description": "A space for children and families to find community after a death or loss.",
+   "phones": [
+    {
+     "label": "Imagine",
+     "number": "1-908-264-3100"
+    }
+   ],
+   "texts": [],
+   "website": "https://imaginenj.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "children",
+    "family"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "grief-national-alliance-for-children-s-grief": {
+   "categories": [
+    "grief"
+   ],
+   "name": "National Alliance for Children's Grief",
+   "description": "National organization supporting grieving children and the people around them. Search by zip code for local grief support for any age.",
+   "phones": [],
+   "texts": [],
+   "website": "https://nacg.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "children",
+    "zip code search"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "legal-legal-services-of-new-jersey-lsnj": {
+   "categories": [
+    "legal"
+   ],
+   "name": "Legal Services of New Jersey (LSNJ)",
+   "description": "Coordinates New Jersey's statewide Legal Services system: free legal help for low-income people in civil matters.",
+   "phones": [
+    {
+     "label": "LSNJ",
+     "number": "1-888-576-5529 (1-888-LSNJ-LAW)"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "Mon-Fri 8am-5:30pm",
+   "is247": false,
+   "ages": "",
+   "cost": "Free for low-income",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "civil",
+    "low income"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "lgbtq-lgbtq-national-hotline": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "LGBTQ+ National Hotline",
+   "description": "One-to-one peer support and a confidential space to talk about coming out, gender or sexual identity, relationships, bullying, self-harm and more.",
+   "phones": [
+    {
+     "label": "Hotline",
+     "number": "1-888-843-4564"
+    }
+   ],
+   "texts": [],
+   "website": "https://lgbthotline.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Sat (see website for hours)",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "coming out",
+    "peer support"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "lgbtq-lgbtq-national-youth-talkline": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "LGBTQ+ National Youth Talkline",
+   "description": "National line. Youth serving youth up to age 25.",
+   "phones": [
+    {
+     "label": "Talkline",
+     "number": "1-800-246-7743"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Fri 4pm-12am",
+   "is247": false,
+   "ages": "Up to 25",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "youth",
+    "peer support"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "lgbtq-performcare-lgbtqia-youth": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "PerformCare (LGBTQIA+ youth)",
+   "description": "Connections to housing, counseling, school supports, bullying help and more for LGBTQIA+ youth.",
+   "phones": [
+    {
+     "label": "PerformCare",
+     "number": "1-877-652-7624"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Under 21",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "youth",
+    "bullying"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "lgbtq-rad-family-north-jersey-pride": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "RAD Family (North Jersey Pride)",
+   "description": "Program for transgender and gender-expansive youth and their families.",
+   "phones": [],
+   "texts": [],
+   "website": "https://northjerseypride.org/rad-family",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "trans",
+    "youth",
+    "family"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "lgbtq-sage-national-lgbtq-elder-hotline": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "SAGE National LGBTQ+ Elder Hotline",
+   "description": "National line for older LGBTQ+ people and caregivers.",
+   "phones": [
+    {
+     "label": "SAGE",
+     "number": "1-877-360-5428"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Older adults",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "seniors",
+    "caregivers"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "lgbtq-the-trevor-project": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "The Trevor Project",
+   "description": "National crisis support for LGBTQ+ young people.",
+   "phones": [
+    {
+     "label": "Call",
+     "number": "1-866-488-7386"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "'START' to 678-678"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Youth",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "youth",
+    "crisis"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "lgbtq-trans-lifeline": {
+   "categories": [
+    "lgbtq"
+   ],
+   "name": "Trans Lifeline",
+   "description": "National peer support run by and for trans people.",
+   "phones": [
+    {
+     "label": "Trans Lifeline",
+     "number": "1-877-565-8860"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Typically Mon-Sat 11am-5pm ET",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "trans",
+    "peer support"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "mh-support-caller-s-insurance-company": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "Caller's insurance company",
+   "description": "If the caller has insurance, suggest they contact their insurance company for a list of mental health providers (Aetna, Cigna, Medicare, Medicaid, Humana, United Healthcare, PCA, etc.).",
+   "phones": [],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "insurance",
+    "provider list"
+   ],
+   "order": 8,
+   "hidden": false
+  },
+  "mh-support-center-for-interactive-mental-health-solutions": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "Center for Interactive Mental Health Solutions",
+   "description": "Free 8-session interactive therapy program for depression that people complete on their own.",
+   "phones": [],
+   "texts": [],
+   "website": "https://cimhs.com",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "depression",
+    "self-guided"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "mh-support-depression-and-bipolar-support-alliance-dbsa-new-": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "Depression and Bipolar Support Alliance (DBSA) New Jersey",
+   "description": "Peer support groups for people living with a mood disorder, or supporting a loved one with one, led by people who have been there.",
+   "phones": [
+    {
+     "label": "DBSA",
+     "number": "1-888-829-2483"
+    }
+   ],
+   "texts": [],
+   "website": "https://dbsanewjersey.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "depression",
+    "bipolar",
+    "support group"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "mh-support-inclusive-therapists": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "Inclusive Therapists",
+   "description": "Therapist directory centered on BIPOC and LGBTQ+ communities, with a BIPOC therapy fund.",
+   "phones": [],
+   "texts": [],
+   "website": "https://inclusivetherapists.com",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "BIPOC",
+    "LGBTQ+",
+    "therapist finder"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "mh-support-nami-national-alliance-on-mental-illness-helpline": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "NAMI (National Alliance on Mental Illness) HelpLine",
+   "description": "Free nationwide information, resource referrals and support for people living with a mental health condition, their families and caregivers, providers and the public. Can offer resources for people with no insurance.",
+   "phones": [
+    {
+     "label": "HelpLine",
+     "number": "1-800-950-6264"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "'HelpLine' to 62640"
+    }
+   ],
+   "website": "https://www.nami.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Fri 10am-10pm",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "no insurance",
+    "family"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "mh-support-nj-mentalhealthcares": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "NJ MentalHealthCares",
+   "description": "Free, confidential helpline with information and referrals for behavioral health services, including Medicaid, Medicare, private insurance and no insurance.",
+   "phones": [
+    {
+     "label": "Helpline",
+     "number": "1-866-202-4357"
+    }
+   ],
+   "texts": [],
+   "website": "https://njmentalhealthcares.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "8am-8pm, 7 days a week",
+   "is247": false,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referrals",
+    "no insurance",
+    "Medicaid"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "mh-support-performcare-family-support": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "PerformCare (family support)",
+   "description": "For parents and guardians looking for mental health support for children under 21: in-home counseling, behavioral supports, mobile crisis response, care management and more.",
+   "phones": [
+    {
+     "label": "PerformCare",
+     "number": "1-877-652-7624"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Under 21",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "children",
+    "parents"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "mh-support-samhsa-findtreatment-gov": {
+   "categories": [
+    "mh-support"
+   ],
+   "name": "SAMHSA FindTreatment.gov",
+   "description": "Confidential, anonymous search for state-licensed mental health treatment facilities in the U.S. and its territories. No phone number, website only.",
+   "phones": [],
+   "texts": [],
+   "website": "https://findtreatment.gov",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "treatment finder"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "pes-acenda-integrated-health-cape-may-court-house": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Acenda Integrated Health (Cape May Court House)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "609-465-5999"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Cape May Court House, NJ",
+   "counties": [
+    "Cape May"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Cape May County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "pes-acenda-integrated-health-sewell": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Acenda Integrated Health (Sewell)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "856-845-9100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Sewell, NJ",
+   "counties": [
+    "Gloucester"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Gloucester County. No services at this location. Call the number for assistance.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 9,
+   "hidden": false
+  },
+  "pes-bridgeway-behavioral-health-services-somerville": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Bridgeway Behavioral Health Services (Somerville)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "908-526-4100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Somerville, NJ",
+   "counties": [
+    "Somerset"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Somerset County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 27,
+   "hidden": false
+  },
+  "pes-capital-health-regional-medical-center-trenton": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Capital Health Regional Medical Center (Trenton)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "609-396-4357"
+    },
+    {
+     "label": "Alternate",
+     "number": "609-989-7297"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Trenton, NJ",
+   "counties": [
+    "Mercer"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Mercer County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 14,
+   "hidden": false
+  },
+  "pes-careplus-nj-inc-new-bridge-medical-center-paramus": {
+   "categories": [
+    "pes"
+   ],
+   "name": "CarePlus NJ Inc. @ New Bridge Medical Center (Paramus)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "201-262-4357"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Paramus, NJ",
+   "counties": [
+    "Bergen"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Bergen County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "pes-center-for-family-services-phillipsburg": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Center for Family Services (Phillipsburg)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "908-454-5141"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Phillipsburg, NJ",
+   "counties": [
+    "Warren"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Warren County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 32,
+   "hidden": false
+  },
+  "pes-centrastate-medical-center-freehold": {
+   "categories": [
+    "pes"
+   ],
+   "name": "CentraState Medical Center (Freehold)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-294-2595"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Freehold, NJ",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 18,
+   "hidden": false
+  },
+  "pes-chilton-medical-center-pompton-plains": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Chilton Medical Center (Pompton Plains)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-831-5078"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Pompton Plains, NJ",
+   "counties": [
+    "Morris"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 23,
+   "hidden": false
+  },
+  "pes-clara-maass-medical-center-belleville": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Clara Maass Medical Center (Belleville)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-844-4357"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Belleville, NJ",
+   "counties": [
+    "Essex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Essex County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 8,
+   "hidden": false
+  },
+  "pes-cumberland-county-guidance-center-bridgeton": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Cumberland County Guidance Center (Bridgeton)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "856-455-5555"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Bridgeton, NJ",
+   "counties": [
+    "Cumberland"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Cumberland County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "pes-healthcare-commons-inc-inspira-mannington-medical-center": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Healthcare Commons, Inc. @ Inspira Mannington Medical Center (Salem)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "856-299-3001"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Salem, NJ",
+   "counties": [
+    "Salem"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Salem County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 26,
+   "hidden": false
+  },
+  "pes-hoboken-university-medical-center-hoboken": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Hoboken University Medical Center (Hoboken)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "201-418-2090"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Hoboken, NJ",
+   "counties": [
+    "Hudson"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 12,
+   "hidden": false
+  },
+  "pes-hunterdon-medical-center-emergency-services-behavioral-h": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Hunterdon Medical Center Emergency Services, Behavioral Health (Flemington)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "908-788-6400"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Flemington, NJ",
+   "counties": [
+    "Hunterdon"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Hunterdon County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 13,
+   "hidden": false
+  },
+  "pes-jersey-city-medical-center-jersey-city": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Jersey City Medical Center (Jersey City)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "866-367-6023"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Jersey City, NJ",
+   "counties": [
+    "Hudson"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Hudson County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 10,
+   "hidden": false
+  },
+  "pes-jersey-shore-university-medical-center-neptune": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Jersey Shore University Medical Center (Neptune)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-776-4555"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Neptune, NJ",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 19,
+   "hidden": false
+  },
+  "pes-legacy-treatment-services-hainesport": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Legacy Treatment Services (Hainesport)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "609-835-6180"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Hainesport, NJ",
+   "counties": [
+    "Burlington"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Burlington County. No services at this location. Call the number for assistance.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "pes-monmouth-medical-center-long-branch": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Monmouth Medical Center (Long Branch)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-923-6999"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Long Branch, NJ",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Monmouth County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 17,
+   "hidden": false
+  },
+  "pes-monmouth-medical-center-south-lakewood": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Monmouth Medical Center South (Lakewood)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "866-904-4474"
+    },
+    {
+     "label": "Alternate",
+     "number": "732-886-4474"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Lakewood, NJ",
+   "counties": [
+    "Ocean"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Ocean County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 24,
+   "hidden": false
+  },
+  "pes-morristown-memorial-hospital-morristown": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Morristown Memorial Hospital (Morristown)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-540-0100"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Morristown, NJ",
+   "counties": [
+    "Morris"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 22,
+   "hidden": false
+  },
+  "pes-newark-beth-israel-medical-center-newark": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Newark Beth Israel Medical Center (Newark)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-926-7444"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Newark, NJ",
+   "counties": [
+    "Essex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Essex County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "pes-newton-medical-center-newton": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Newton Medical Center (Newton)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-383-0973"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Newton, NJ",
+   "counties": [
+    "Sussex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Sussex County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 28,
+   "hidden": false
+  },
+  "pes-oaks-integrated-care-cherry-hill": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Oaks Integrated Care (Cherry Hill)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "856-428-4357"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Cherry Hill, NJ",
+   "counties": [
+    "Camden"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Camden County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "pes-overlook-medical-center-summit": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Overlook Medical Center (Summit)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-831-5078"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Summit, NJ",
+   "counties": [
+    "Union"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller. This number is the same one listed for Chilton Medical Center in the source document. Please confirm with staff.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 30,
+   "hidden": false
+  },
+  "pes-palisades-medical-center-north-bergen": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Palisades Medical Center (North Bergen)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "201-854-5760"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "North Bergen, NJ",
+   "counties": [
+    "Hudson"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 11,
+   "hidden": false
+  },
+  "pes-prime-healthcare-services-st-clare-s-denville": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Prime Healthcare Services - St. Clare's (Denville)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-625-6160"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Denville, NJ",
+   "counties": [
+    "Morris"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Morris County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 21,
+   "hidden": false
+  },
+  "pes-psych-intervention-program-atlanticare-regional-medical-": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Psych Intervention Program @ AtlantiCare Regional Medical Center (Atlantic City)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "609-344-1118"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Atlantic City, NJ",
+   "counties": [
+    "Atlantic"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Atlantic County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 0,
+   "hidden": false
+  },
+  "pes-rahway-hospital-rahway": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Rahway Hospital (Rahway)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-381-4949"
+    },
+    {
+     "label": "Alternate",
+     "number": "732-499-6165"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Rahway, NJ",
+   "counties": [
+    "Union"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Union County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 31,
+   "hidden": false
+  },
+  "pes-raritan-bay-medical-center-perth-amboy": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Raritan Bay Medical Center (Perth Amboy)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-324-5289"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Perth Amboy, NJ",
+   "counties": [
+    "Middlesex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 16,
+   "hidden": false
+  },
+  "pes-riverview-medical-center-red-bank": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Riverview Medical Center (Red Bank)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-219-5325"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Red Bank, NJ",
+   "counties": [
+    "Monmouth"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Does not go to the caller.",
+   "goesToCaller": false,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 20,
+   "hidden": false
+  },
+  "pes-st-joseph-s-hospital-health-care-system-paterson": {
+   "categories": [
+    "pes"
+   ],
+   "name": "St. Joseph's Hospital Health Care System (Paterson)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-754-2230"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Paterson, NJ",
+   "counties": [
+    "Passaic"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Passaic County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 25,
+   "hidden": false
+  },
+  "pes-trinitas-regional-medical-center-rwjbarnabas-elizabeth": {
+   "categories": [
+    "pes"
+   ],
+   "name": "Trinitas Regional Medical Center / RWJBarnabas (Elizabeth)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "908-994-7131"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Elizabeth, NJ",
+   "counties": [
+    "Union"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Union County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 29,
+   "hidden": false
+  },
+  "pes-university-behavioral-health-care-newark": {
+   "categories": [
+    "pes"
+   ],
+   "name": "University Behavioral Health Care (Newark)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "973-623-2323"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Newark, NJ",
+   "counties": [
+    "Essex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Essex County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "pes-university-behavioral-health-care-piscataway": {
+   "categories": [
+    "pes"
+   ],
+   "name": "University Behavioral Health Care (Piscataway)",
+   "description": "Psychiatric emergency screening: assessment, emergency and referral services for people in acute psychiatric distress. For ages 18 and up; for a child, offer PerformCare 1-877-652-7624.",
+   "phones": [
+    {
+     "label": "PES",
+     "number": "732-235-5700"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "Piscataway, NJ",
+   "counties": [
+    "Middlesex"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "18+",
+   "cost": "",
+   "notes": "Referral only: volunteers DO NOT call PES. The caller can call directly. PES always arrives with the police. Goes to the caller only within Middlesex County.",
+   "goesToCaller": true,
+   "source": "NJ Psychiatric Screening Centers list (01/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "referral only",
+    "psychiatric emergency"
+   ],
+   "order": 15,
+   "hidden": false
+  },
+  "social-nj-211": {
+   "categories": [
+    "social"
+   ],
+   "name": "NJ 211",
+   "description": "Free, confidential, multilingual resource for basic needs such as housing, food, money and legal help.",
+   "phones": [
+    {
+     "label": "NJ 211",
+     "number": "211"
+    }
+   ],
+   "texts": [],
+   "website": "https://nj211.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "Free",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "housing",
+    "food",
+    "multilingual"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "social-nj-helps": {
+   "categories": [
+    "social"
+   ],
+   "name": "NJ Helps",
+   "description": "Helps determine eligibility for food assistance (SNAP), cash assistance (WFNJ/TANF or WFNJ/GA) and health insurance (NJ FamilyCare/Medicaid).",
+   "phones": [],
+   "texts": [],
+   "website": "https://njhelps.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "SNAP",
+    "benefits",
+    "Medicaid"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "substance-gambling-helpline": {
+   "categories": [
+    "substance"
+   ],
+   "name": "Gambling Helpline",
+   "description": "National line. Counselors available based on insurance, connection to resources, and can place online gamblers on an exclusion list.",
+   "phones": [
+    {
+     "label": "Gambling helpline",
+     "number": "1-800-426-2537"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "gambling"
+   ],
+   "order": 5,
+   "hidden": false
+  },
+  "substance-nj-connect-for-recovery": {
+   "categories": [
+    "substance"
+   ],
+   "name": "NJ Connect for Recovery",
+   "description": "Call line for people with substance use disorders and their families, with counseling and support.",
+   "phones": [
+    {
+     "label": "Line",
+     "number": "1-855-652-3737"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.njconnectforrecovery.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "family",
+    "counseling"
+   ],
+   "order": 6,
+   "hidden": false
+  },
+  "substance-performcare-youth-substance-use": {
+   "categories": [
+    "substance"
+   ],
+   "name": "PerformCare (youth substance use)",
+   "description": "Refers and authorizes substance use treatment for eligible youth under 21 who meet clinical criteria.",
+   "phones": [
+    {
+     "label": "PerformCare",
+     "number": "1-877-652-7624"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "Under 21",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "youth"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "substance-reachnj-addictions-hotline": {
+   "categories": [
+    "substance"
+   ],
+   "name": "ReachNJ Addictions Hotline",
+   "description": "Assessment and connection to resources, including detox centers, based on insurance. Information for family and friends. Resources for people with Medicaid, no insurance, or no ability to pay.",
+   "phones": [
+    {
+     "label": "ReachNJ",
+     "number": "1-844-732-2465 (1-844-REACHNJ)"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "detox",
+    "no insurance",
+    "family"
+   ],
+   "order": 2,
+   "hidden": false
+  },
+  "substance-samhsa-findtreatment-gov-addiction": {
+   "categories": [
+    "substance"
+   ],
+   "name": "SAMHSA FindTreatment.gov (addiction)",
+   "description": "Confidential, anonymous search for state-licensed addiction and substance use treatment facilities.",
+   "phones": [],
+   "texts": [],
+   "website": "https://findtreatment.gov",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "treatment finder"
+   ],
+   "order": 1,
+   "hidden": false
+  },
+  "substance-samhsa-national-helpline": {
+   "categories": [
+    "substance"
+   ],
+   "name": "SAMHSA National Helpline",
+   "description": "Free, confidential treatment referral and information service in English and Spanish for mental and substance use disorders.",
+   "phones": [
+    {
+     "label": "Helpline",
+     "number": "1-800-662-4357"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "Free",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "Spanish",
+    "referrals"
+   ],
+   "order": 7,
+   "hidden": false
+  },
+  "substance-sex-addicts-anonymous-saa": {
+   "categories": [
+    "substance"
+   ],
+   "name": "Sex Addicts Anonymous (SAA)",
+   "description": "Find local or online SAA meetings for sex or porn addiction.",
+   "phones": [],
+   "texts": [],
+   "website": "https://saa-recovery.org",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "meetings"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "veterans-military-onesource": {
+   "categories": [
+    "veterans"
+   ],
+   "name": "Military OneSource",
+   "description": "National line. Information and referrals.",
+   "phones": [
+    {
+     "label": "Military OneSource",
+     "number": "1-800-342-9647"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "service members",
+    "families"
+   ],
+   "order": 3,
+   "hidden": false
+  },
+  "veterans-nj-vet2vet": {
+   "categories": [
+    "veterans"
+   ],
+   "name": "NJ Vet2Vet",
+   "description": "Peer support line for New Jersey veterans and their families, answered by veterans.",
+   "phones": [
+    {
+     "label": "Vet2Vet",
+     "number": "1-866-838-7654"
+    }
+   ],
+   "texts": [],
+   "website": "https://www.njvet2vet.org",
+   "address": "",
+   "counties": [
+    "Statewide"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "Suggested addition, not from Caring Contact's documents. Please have staff verify before sharing with callers.",
+   "goesToCaller": null,
+   "source": "Suggested by Claude, not from Caring Contact documents",
+   "suggestion": true,
+   "tags": [
+    "peer support"
+   ],
+   "order": 4,
+   "hidden": false
+  },
+  "veterans-va-health-benefits-hotline": {
+   "categories": [
+    "veterans"
+   ],
+   "name": "VA Health Benefits Hotline",
+   "description": "National line. Information and connection to resources for veterans.",
+   "phones": [
+    {
+     "label": "VA benefits",
+     "number": "1-877-222-8387"
+    }
+   ],
+   "texts": [],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "Mon-Fri 8am-8pm",
+   "is247": false,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [],
+   "order": 1,
+   "hidden": false
+  },
+  "veterans-veterans-crisis-line": {
+   "categories": [
+    "veterans"
+   ],
+   "name": "Veterans Crisis Line",
+   "description": "Veterans or service members in crisis reach specially trained VA responders any time. Friends and family can get support too.",
+   "phones": [
+    {
+     "label": "Call",
+     "number": "988, then press 1"
+    }
+   ],
+   "texts": [
+    {
+     "label": "Text",
+     "value": "838255"
+    }
+   ],
+   "website": "",
+   "address": "",
+   "counties": [
+    "National"
+   ],
+   "hours": "",
+   "is247": true,
+   "ages": "",
+   "cost": "",
+   "notes": "",
+   "goesToCaller": null,
+   "source": "Caring Contact Resource Guide (updated 5/19/2026)",
+   "suggestion": false,
+   "tags": [
+    "crisis",
+    "suicide"
+   ],
+   "order": 2,
+   "hidden": false
+  }
+ },
+ "categories": {
+  "alternatives": {
+   "name": "Alternatives to law enforcement",
+   "description": "Peer support, crisis homes and other options besides police.",
+   "order": 6
+  },
+  "ccbhc": {
+   "name": "Community behavioral health clinics (CCBHC)",
+   "description": "Clinics that do not turn anyone away for ability to pay or where they live.",
+   "order": 5
+  },
+  "child-family": {
+   "name": "Child and family services",
+   "description": "Child abuse, runaways, family support and teen dating.",
+   "order": 12
+  },
+  "crisis-adults": {
+   "name": "Crisis care: adults",
+   "description": "Crisis help for adults 18 and over.",
+   "order": 0
+  },
+  "crisis-idd": {
+   "name": "Crisis care: intellectual and developmental disabilities",
+   "description": "Crisis help for people with I/DD.",
+   "order": 2
+  },
+  "crisis-youth": {
+   "name": "Crisis care: youth",
+   "description": "Crisis help for children and young people under 21.",
+   "order": 1
+  },
+  "disaster": {
+   "name": "Disaster distress",
+   "description": "Emotional support after disasters.",
+   "order": 17
+  },
+  "dv": {
+   "name": "Domestic and sexual violence",
+   "description": "Abuse, assault, stalking and trafficking.",
+   "order": 14
+  },
+  "eating": {
+   "name": "Eating disorders",
+   "description": "Support for eating disorders and body image.",
+   "order": 13
+  },
+  "eiss": {
+   "name": "Early Intervention Support Services (EISS)",
+   "description": "Short-term walk-in mental health care for adults, by county. Not 24/7.",
+   "order": 4
+  },
+  "food": {
+   "name": "Food assistance",
+   "description": "Food banks and SNAP/EBT help.",
+   "order": 9
+  },
+  "grief": {
+   "name": "Grief",
+   "description": "Support after a death or loss, including pets.",
+   "order": 10
+  },
+  "legal": {
+   "name": "Legal services",
+   "description": "Free legal help.",
+   "order": 18
+  },
+  "lgbtq": {
+   "name": "LGBTQ+",
+   "description": "Support for LGBTQ+ people of all ages.",
+   "order": 15
+  },
+  "mh-support": {
+   "name": "Mental health agencies and support",
+   "description": "Helplines, therapy finders and support groups.",
+   "order": 7
+  },
+  "pes": {
+   "name": "Psychiatric screening centers (PES)",
+   "description": "Referral only. Volunteers do not call PES. PES always arrives with police.",
+   "order": 3
+  },
+  "social": {
+   "name": "Social services and basic needs",
+   "description": "Housing, food, money, benefits and insurance.",
+   "order": 8
+  },
+  "substance": {
+   "name": "Substance use and addictive behaviors",
+   "description": "Drugs, alcohol, gambling and other addictions.",
+   "order": 11
+  },
+  "veterans": {
+   "name": "Veterans and military",
+   "description": "Help for veterans, service members and families.",
+   "order": 16
+  }
+ },
+ "notices": {
+  "eiss": {
+   "level": "info",
+   "title": "EISS is not 24/7",
+   "body": "Early Intervention Support Services usually run during business hours. Check the hours on each listing.",
+   "order": 1
+  },
+  "pes": {
+   "level": "critical",
+   "title": "We do not call PES",
+   "body": "Volunteers never call a Psychiatric Screening Center (PES) directly. Callers can call PES themselves. PES always arrives with the police, and mobile outreach only covers the county where the center is located. PES is for ages 18 and up. If the caller is a child, offer PerformCare at 1-877-652-7624.",
+   "order": 0,
+   "banner": "PES always arrives with the police. Callers can call PES themselves."
+  },
+  "report": {
+   "level": "info",
+   "title": "Spotted something wrong?",
+   "body": "If any resource is incorrect or outdated, please tell Caring Contact staff so it can be updated. Additional resources are on the Hub.",
+   "order": 2
+  }
+ },
+ "settings": {
+  "site": {
+   "title": "Resource Finder",
+   "subtitle": "New Jersey mental health and support resources for Caring Contact volunteers",
+   "footer": "Caring Contact Resource Guide updated 5/19/2026. PES list updated 1/19/2026. EISS list updated 4/21/2025.",
+   "counties": [
+    "Atlantic",
+    "Bergen",
+    "Burlington",
+    "Camden",
+    "Cape May",
+    "Cumberland",
+    "Essex",
+    "Gloucester",
+    "Hudson",
+    "Hunterdon",
+    "Mercer",
+    "Middlesex",
+    "Monmouth",
+    "Morris",
+    "Ocean",
+    "Passaic",
+    "Salem",
+    "Somerset",
+    "Sussex",
+    "Union",
+    "Warren"
+   ]
+  }
+ }
+}
