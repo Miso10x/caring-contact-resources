@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <title>Caring Contact Resource Finder</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=League+Spartan:wght@600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
@@ -31,7 +32,7 @@
 body{margin:0}
 img{max-width:100%}
 body{background:var(--ground);color:var(--text);font:16px/1.5 var(--body);padding-inline:0;padding-block:0 48px}
-.wrap,.band>div,.strip>div{padding-inline:16px}
+.wrap,.band>div{padding-inline:16px}
 h1,h2,h3{color:var(--ink)}
 .wrap{max-width:1180px;margin:0 auto}
 h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
@@ -41,9 +42,6 @@ button{cursor:pointer}
 a{color:var(--accent)}
 .muted{color:var(--muted)}
 
-.strip{background:var(--navy);color:var(--navy-ink);font-size:15px;font-weight:700}
-.strip>div{max-width:1180px;margin:0 auto;padding-block:10px;text-align:center}
-.strip .hl{color:#E5F29C}
 .band{background:var(--lime)}
 .band>div{max-width:1180px;margin:0 auto}
 header.top{padding-block:22px 22px;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between}
@@ -167,7 +165,6 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
 </head>
 <body>
 
-<div class="strip" id="strip" role="note"><div id="stripText">Volunteers never call PES directly. <span class="hl">PES always arrives with the police.</span></div></div>
 <div class="band"><div>
   <header class="top">
     <div class="brand">
@@ -227,7 +224,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
   };
   const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
 
-  const S = { resources: [], categories: [], notices: [], site: null, loaded: new Set(), cat: "all", admin: false, tab: "resources", editing: null };
+  const S = { resources: [], categories: [], notices: [], available: [], site: null, loaded: new Set(), cat: "all", admin: false, tab: "resources", editing: null };
   let db = null;
 
   // ---------- data ----------
@@ -290,9 +287,6 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
 
   // ---------- volunteer view ----------
   function renderNotices() {
-    const crit = S.notices.filter(n => !n.hidden && n.level === "critical");
-    $("#strip").hidden = !crit.length;
-    $("#stripText").replaceChildren(...crit.flatMap((n, i) => [i ? " · " : "", h("span", { class: "hl" }, n.title + "."), n.banner ? " " + n.banner : ""]));
     $("#notices").replaceChildren(...S.notices.filter(n => !n.hidden).map(n =>
       h("div", { class: "notice " + (n.level === "critical" ? "critical" : "info") }, h("strong", {}, n.title), h("p", {}, n.body))));
   }
@@ -520,7 +514,6 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
       const lvl = h("select", {}, h("option", { value: "critical" }, "Red: a rule volunteers must follow"), h("option", { value: "info" }, "Plain: helpful information"));
       lvl.value = item.level || "info";
       const hid = h("input", { type: "checkbox", checked: !!item.hidden });
-      const ban = h("input", { value: item.banner || "" });
       const used = kind === "categories" && !isNew ? S.resources.filter(r => (r.categories || []).includes(item.id)).length : 0;
       const conf = h("div", { class: "confirm", hidden: true }, h("span", {}, used ? `Delete this category? ${used} resources use it; they stay, but lose this category.` : "Delete this for everyone?"),
         h("button", { type: "button", class: "btn danger small", onclick: () => remove(kind, item.id, st, () => renderAdmin()) }, "Yes, delete"),
@@ -529,18 +522,53 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
         e.preventDefault();
         if (!t.value.trim()) { status(st, "Add a name first.", "err"); return; }
         const data = kind === "categories" ? { name: t.value.trim(), description: d.value.trim(), order: Number(o.value) || 0 }
-          : { title: t.value.trim(), body: d.value.trim(), banner: ban.value.trim(), level: lvl.value, order: Number(o.value) || 0, hidden: hid.checked };
+          : { title: t.value.trim(), body: d.value.trim(), level: lvl.value, order: Number(o.value) || 0, hidden: hid.checked };
         save(kind, isNew ? slugify(t.value) : item.id, data, st);
       } },
         h("div", { class: "fgrid" }, field(kind === "categories" ? "Category name" : "Headline", t), field("Order", o, "Lower numbers come first.")),
         field(kind === "categories" ? "Short description" : "Message", d),
-        kind === "notices" ? field("Banner text", ban, "Red notices also show in the dark bar at the very top, after the headline. Keep it to one short sentence.") : null,
         kind === "notices" ? h("div", { class: "fgrid" }, field("Style", lvl), h("div", { class: "checks", style: "align-self:end" }, h("label", {}, hid, "Hide this notice"))) : null,
         h("div", { class: "adminbar" }, h("button", { type: "submit", class: "btn primary" }, isNew ? "Add" : "Save"),
           !isNew ? h("button", { type: "button", class: "btn danger", onclick: () => (conf.hidden = false) }, "Delete") : null, st), conf);
     };
     wrap.append(h("p", { class: "muted", style: "margin:0" }, kind === "categories" ? "Categories group resources on the main page and in the side list." : "Notices appear at the top of the main page, above the search results."),
       ...rows.map(mk), h("h3", { style: "font-size:16px;margin-top:8px" }, kind === "categories" ? "Add a category" : "Add a notice"), mk(null));
+    return wrap;
+  }
+
+  function availableTab() {
+    const cm = catMap();
+    const wrap = h("div", { class: "panel", style: "display:grid;gap:12px" });
+    const showDismissed = S.showDismissed;
+    const items = S.available.filter(a => showDismissed || !a.dismissed).sort((a, b) => String(a.name).localeCompare(String(b.name)));
+    wrap.append(h("p", { class: "muted", style: "margin:0" },
+      "More New Jersey resources from the state's mental health page (nj.gov). None of these are in the main list yet. Press Add to put one in the main list for volunteers; you can edit it afterwards like any other resource."),
+      h("label", { class: "toggle", style: "justify-self:start" }, h("input", { type: "checkbox", checked: !!showDismissed, onchange: e => { S.showDismissed = e.target.checked; renderAdmin(); } }), "Show dismissed"));
+    if (!items.length) wrap.append(h("div", { class: "empty" }, "Nothing left to add. Everything here has been added or dismissed."));
+    for (const a of items) {
+      const st = h("p", { class: "status", role: "status" });
+      const contacts = (a.phones || []).map(p => (p.label ? p.label + ": " : "") + p.number).join(" · ");
+      wrap.append(h("article", { class: "card" + (a.dismissed ? " sugg" : "") },
+        h("h3", {}, a.name),
+        h("div", { class: "badges" }, (a.categories || []).map(c => h("span", { class: "b" }, cm[c]?.name || c)), a.is247 ? h("span", { class: "b h24" }, "24/7") : null, a.dismissed ? h("span", { class: "b hid" }, "Dismissed") : null),
+        a.description ? h("p", { class: "desc" }, a.description) : null,
+        contacts ? h("p", { style: "margin:0;font-family:var(--mono)" }, contacts) : null,
+        a.website ? h("p", { style: "margin:0" }, h("a", { href: a.website, target: "_blank", rel: "noopener" }, a.website.replace(/^https?:\/\/(www\.)?/, ""))) : null,
+        h("div", { class: "adminbar" },
+          h("button", { type: "button", class: "btn primary", onclick: async () => {
+            const { id, dismissed, ...data } = a;
+            try {
+              status(st, "Adding…");
+              await db.collection("resources").doc(id).set({ counties: ["Statewide"], phones: [], texts: [], tags: [], ...data,
+                suggestion: false, hidden: false, is247: !!data.is247, order: 50, updatedAt: new Date().toISOString() });
+              await db.collection("available").doc(id).delete();
+            } catch (e) { status(st, "Could not add (" + e.code + "). Try again.", "err"); }
+          } }, "Add to main list"),
+          h("button", { type: "button", class: "btn", onclick: async () => {
+            try { const { id, ...data } = a; await db.collection("available").doc(id).set({ ...data, dismissed: !a.dismissed }); }
+            catch (e) { status(st, "Could not update (" + e.code + ").", "err"); }
+          } }, a.dismissed ? "Restore" : "Dismiss"), st)));
+    }
     return wrap;
   }
 
@@ -560,11 +588,11 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
 
   function renderAdmin() {
     const v = $("#adminView");
-    const tabs = [["resources", "Resources"], ["categories", "Categories"], ["notices", "Notices"], ["site", "Page text"]];
+    const tabs = [["resources", "Resources"], ["available", "Available to add (" + S.available.filter(a => !a.dismissed).length + ")"], ["categories", "Categories"], ["notices", "Notices"], ["site", "Page text"]];
     v.replaceChildren(h("div", { class: "admin" },
       h("p", { class: "muted", style: "margin:0" }, "Changes save for everyone as soon as you press Save. Only people who signed in with the staff password can make changes."),
       h("div", { class: "tabs" }, tabs.map(([id, label]) => h("button", { type: "button", "aria-pressed": String(S.tab === id), onclick: () => { S.tab = id; S.editing = null; renderAdmin(); } }, label))),
-      S.tab === "resources" ? resourcesTab() : S.tab === "site" ? siteTab() : simpleListTab(S.tab)));
+      S.tab === "resources" ? resourcesTab() : S.tab === "available" ? availableTab() : S.tab === "site" ? siteTab() : simpleListTab(S.tab)));
   }
 
   function setMode(m) {
@@ -636,7 +664,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
     subscribe("resources", "resources"); subscribe("categories", "categories"); subscribe("notices", "notices"); subscribe("settings", "site");
     let me = {};
     try { me = await (await fetch("/api/me")).json(); } catch (e) {}
-    if (me.role === "admin") { S.admin = true; $("#modeSwitch").hidden = false; renderAll(); }
+    if (me.role === "admin") { S.admin = true; subscribe("available", "available"); $("#modeSwitch").hidden = false; renderAll(); }
   })();
 })();
 </script>

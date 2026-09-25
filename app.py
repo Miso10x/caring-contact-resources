@@ -66,13 +66,23 @@ def role():
 
 @app.before_request
 def require_login():
-    if request.path in ("/login", "/healthz"):
+    if request.path in ("/login", "/healthz", "/favicon.svg", "/favicon.ico"):
         return None
     if role() in ("admin", "volunteer"):
         return None
     if request.path.startswith("/api/"):
         return jsonify(error="Please sign in again."), 401
     return redirect("/login")
+
+
+@app.get("/favicon.svg")
+def favicon():
+    return send_from_directory(STATIC, "favicon.svg", mimetype="image/svg+xml", max_age=86400)
+
+
+@app.get("/favicon.ico")
+def favicon_ico():
+    return redirect("/favicon.svg")
 
 
 @app.get("/healthz")
@@ -83,6 +93,7 @@ def healthz():
 LOGIN_PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Sign in · Caring Contact Resource Finder</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=League+Spartan:wght@700;800&display=swap">
 <style>
 body{margin:0;min-height:100vh;display:grid;place-items:center;background:#E5F29C;color:#12305F;font:16px/1.5 "Atkinson Hyperlegible",system-ui,sans-serif;padding:16px;box-sizing:border-box}
@@ -145,7 +156,7 @@ def me():
 
 @app.get("/api/data")
 def data():
-    resp = jsonify(store.all_docs())
+    resp = jsonify(store.all_docs(include_admin=role() == "admin"))
     resp.headers["Cache-Control"] = "no-store"
     return resp
 
@@ -185,6 +196,7 @@ def delete_doc(collection, doc_id):
 
 
 store.seed_if_empty()
+store.migrate()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
