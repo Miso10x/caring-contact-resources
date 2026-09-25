@@ -94,17 +94,18 @@ LOGIN_PAGE = """<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex">
 <title>Sign in · Caring Contact Resource Finder</title>
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=League+Spartan:wght@700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat:wght@400;500;600;700&display=swap">
 <style>
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:#E5F29C;color:#12305F;font:16px/1.5 "Atkinson Hyperlegible",system-ui,sans-serif;padding:16px;box-sizing:border-box}
-form{background:#fff;border-radius:14px;padding:28px;max-width:380px;width:100%;display:grid;gap:14px;box-shadow:0 2px 0 #C9D6E3}
-small{font:700 12px "League Spartan",system-ui,sans-serif;color:#0E8A78;letter-spacing:.05em;text-transform:uppercase}
-h1{font:800 30px/1 "League Spartan",system-ui,sans-serif;margin:0}
-label{font-weight:700;display:grid;gap:6px}
-input{font:inherit;border:2px solid #0E3B7C;border-radius:8px;padding:10px 12px}
-button{font:700 16px "League Spartan",system-ui,sans-serif;background:#0E3B7C;color:#fff;border:0;border-radius:8px;padding:12px}
-.err{color:#A3281A;margin:0;font-weight:700}
-p{margin:0;color:#4F6178;font-size:14px}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#F3F4F2;color:#1D1D1B;font:16px/1.5 Montserrat,system-ui,sans-serif;padding:16px;box-sizing:border-box}
+form{background:#fff;border-top:3px solid #00A396;border-radius:4px;padding:32px 28px;max-width:380px;width:100%;display:grid;gap:16px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+small{font:700 12px Montserrat,system-ui,sans-serif;color:#00A396;letter-spacing:.08em;text-transform:uppercase}
+h1{font:700 30px/1.1 "Libre Baskerville",Georgia,serif;margin:4px 0 0}
+label{font-weight:600;display:grid;gap:6px;font-size:14px}
+input{font:inherit;border:1px solid #DCDFDC;border-radius:999px;padding:11px 16px}
+input:focus{outline:3px solid #00A39655;border-color:#00A396}
+button{font:600 15px Montserrat,system-ui,sans-serif;background:#00857B;color:#fff;border:0;border-radius:999px;padding:12px;cursor:pointer}
+.err{color:#A3281A;margin:0;font-weight:600}
+p{margin:0;color:#5E625F;font-size:13px}
 </style></head><body>
 <form method="post" action="/login">
 <div><small>Caring Contact · NJ</small><h1>Resource Finder</h1></div>
