@@ -6,4 +6,4 @@ RUN uv sync --frozen --no-dev --no-install-project
 COPY . .
 ENV DATA_DIR=/data PATH="/code/.venv/bin:$PATH"
 EXPOSE 8000
-CMD ["gunicorn", "--bind", "0.0.0.0:8000", "--workers", "2", "app:app"]
+CMD ["gunicorn", "--preload", "--bind", "0.0.0.0:8000", "--workers", "2", "app:app"]

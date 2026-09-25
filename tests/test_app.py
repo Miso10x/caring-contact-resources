@@ -99,3 +99,42 @@ def test_logout(client):
     login(client, "vol-pass")
     client.post("/logout")
     assert client.get("/api/data").status_code == 401
+
+
+def test_favicon_is_public(client):
+    r = client.get("/favicon.svg")
+    assert r.status_code == 200 and r.mimetype == "image/svg+xml"
+
+
+def test_websites_filled_in_only_where_missing(client):
+    login(client, "vol-pass")
+    res = {r["id"]: r["data"] for r in client.get("/api/data").get_json()["resources"]}
+    assert res["lgbtq-the-trevor-project"]["website"] == "https://www.thetrevorproject.org"
+    assert res["social-nj-211"]["website"] == "https://nj211.org"  # already had one, untouched
+    mhc = res["mh-support-nj-mentalhealthcares"]["phones"]
+    assert sum("877-294-4356" in p["number"] for p in mhc) == 1
+
+
+def test_available_list_is_staff_only_and_skips_existing(client):
+    login(client, "vol-pass")
+    assert "available" not in client.get("/api/data").get_json()
+    client.post("/logout")
+    login(client, "staff-pass")
+    data = client.get("/api/data").get_json()
+    names = {a["data"]["name"] for a in data["available"]}
+    assert "NJ Peer Recovery Warm Line" in names
+    existing = {r["data"]["name"] for r in data["resources"]}
+    assert not names & existing
+    assert all(a["data"]["source"].startswith("NJ Division of Disability Services") for a in data["available"])
+
+
+def test_migrations_run_once_so_staff_choices_stick(client):
+    login(client, "staff-pass")
+    client.delete("/api/available/mom2mom", headers=WRITE)
+    client.put("/api/resources/lgbtq-the-trevor-project", json={"name": "Trevor", "website": ""}, headers=WRITE)
+    import store
+    store.migrate()
+    data = client.get("/api/data").get_json()
+    assert "mom2mom" not in {a["id"] for a in data["available"]}
+    trevor = {r["id"]: r["data"] for r in data["resources"]}["lgbtq-the-trevor-project"]
+    assert trevor["website"] == ""
