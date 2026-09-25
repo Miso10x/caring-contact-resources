@@ -85,6 +85,8 @@ header.top{padding-block:22px 22px;display:flex;flex-wrap:wrap;gap:12px 24px;ali
 .filters select{background:var(--pill);border:0;border-radius:999px;font-weight:600;font-size:14px;padding:7px 10px;max-width:100%}
 .toggle{display:inline-flex;gap:6px;align-items:center;background:var(--pill);border:0;border-radius:999px;font-weight:600;padding:6px 10px;font-size:14px}
 .toggle input{accent-color:var(--accent);width:16px;height:16px;margin:0}
+.homebtn{border:0;background:var(--navy);color:var(--navy-ink);border-radius:999px;padding:7px 16px;font:600 14px var(--body);cursor:pointer}
+.logo h1{cursor:pointer}
 .count{margin-left:auto;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
 
 .notices{display:flex;flex-wrap:wrap;gap:8px;margin-block:10px 4px;align-items:flex-start}
@@ -208,6 +210,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
         <button type="button" class="clear" id="clearQ" hidden>Clear</button>
       </div>
       <div class="filters">
+        <button type="button" class="homebtn" id="homeBtn" hidden>&larr; All topics</button>
         <select id="catSel" class="catselect" aria-label="Category"></select>
         <select id="countySel" aria-label="County"></select>
         <select id="ageSel" aria-label="Age"><option value="">Any age</option><option value="youth">Youth (under 18)</option><option value="adult">Adult (18+)</option></select>
@@ -316,7 +319,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
     const visible = S.resources.filter(r => !r.hidden || S.admin);
     const cnt = id => visible.filter(r => id === "all" || (r.categories || []).includes(id)).length;
     const opts = [{ id: "all", name: "All resources" }, ...S.categories];
-    $("#cats").replaceChildren(...opts.map(c => h("button", { type: "button", "aria-pressed": String(S.cat === c.id), onclick: () => { S.cat = c.id; renderAll(); } },
+    $("#cats").replaceChildren(...opts.map(c => h("button", { type: "button", "aria-pressed": String(S.cat === c.id), onclick: () => setCat(c.id) },
       h("span", {}, c.name), h("span", { class: "n" }, cnt(c.id)))));
     const sel = $("#catSel");
     sel.replaceChildren(...opts.map(c => h("option", { value: c.id }, c.name + " (" + cnt(c.id) + ")")));
@@ -377,7 +380,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
     $("#home").hidden = !show;
     if (!show) return;
     const visible = S.resources.filter(r => !r.hidden || S.admin);
-    const tile = c => h("button", { type: "button", class: /^crisis/.test(c.id) ? "crit" : null, onclick: () => { S.cat = c.id; renderAll(); window.scrollTo(0, 0); } },
+    const tile = c => h("button", { type: "button", class: /^crisis/.test(c.id) ? "crit" : null, onclick: () => { setCat(c.id); window.scrollTo(0, 0); } },
       c.name, h("span", {}, ((n) => n + (n === 1 ? " resource" : " resources"))(visible.filter(r => (r.categories || []).includes(c.id)).length)));
     // Categories staff add later land in "More topics" until they're added to a group here.
     const placed = new Set(TOPIC_GROUPS.flatMap(g => g.ids));
@@ -391,6 +394,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
     const q = norm($("#q").value).trim(), terms = q.split(/\s+/).filter(Boolean);
     renderTopics(!q && S.cat === "all");
     $("#clearQ").hidden = !q;
+    $("#homeBtn").hidden = !q && S.cat === "all";
     const list = filtered();
     $("#count").textContent = list.length + (list.length === 1 ? " resource" : " resources");
     const out = $("#results");
@@ -646,10 +650,25 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
   }
 
   // ---------- events ----------
+  // Each topic gets a browser history entry, so the phone or browser Back button returns to the topic boxes.
+  function setCat(id, fromHistory) {
+    if (id === S.cat) return renderAll();
+    S.cat = id;
+    if (!fromHistory) history.pushState({ cat: id }, "");
+    renderAll();
+  }
+  function goHome() {
+    $("#q").value = "";
+    setCat("all");
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("popstate", e => { if ($("#findView").hidden) setMode("find"); setCat(e.state?.cat || "all", true); window.scrollTo(0, 0); });
+  $("#homeBtn").addEventListener("click", goHome);
+  $("#siteTitle").addEventListener("click", () => { setMode("find"); goHome(); });
   let tmr;
   $("#q").addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(renderResults, 80); });
   $("#clearQ").addEventListener("click", () => { $("#q").value = ""; renderResults(); $("#q").focus(); });
-  $("#catSel").addEventListener("change", e => { S.cat = e.target.value; renderAll(); });
+  $("#catSel").addEventListener("change", e => setCat(e.target.value));
   for (const id of ["#countySel", "#ageSel", "#only247", "#showSugg"]) $(id).addEventListener("change", () => { store("f" + id, $(id).type === "checkbox" ? $(id).checked : $(id).value); renderResults(); });
   $("#modeFind").addEventListener("click", () => setMode("find"));
   $("#modeAdmin").addEventListener("click", () => setMode("admin"));
