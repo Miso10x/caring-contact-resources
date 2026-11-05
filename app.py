@@ -6,6 +6,7 @@ Two shared passwords, both set as environment variables and never in source:
 Every route except /login and /healthz requires one of them.
 """
 import hmac
+import json
 import os
 import re
 import time
@@ -13,6 +14,7 @@ from datetime import timedelta
 
 from flask import Flask, jsonify, redirect, render_template_string, request, send_from_directory, session
 
+import chat
 import store
 
 MAX_ATTEMPTS = 5
@@ -194,6 +196,60 @@ def delete_doc(collection, doc_id):
         return bad
     store.delete(collection, doc_id)
     return jsonify(ok=True)
+
+
+@app.get("/api/backup")
+def backup():
+    if role() != "admin":
+        return jsonify(error="Only staff can download a backup."), 403
+    body = json.dumps(store.export(), ensure_ascii=False, indent=1)
+    name = "resource-finder-backup-" + time.strftime("%Y-%m-%d") + ".json"
+    return app.response_class(body, mimetype="application/json", headers={"Content-Disposition": f'attachment; filename="{name}"', "Cache-Control": "no-store"})
+
+
+def _check_staff_post():
+    if role() != "admin":
+        return jsonify(error="Only staff can use the assistant."), 403
+    if not request.is_json or request.headers.get("X-Requested-With") != "fetch":
+        return jsonify(error="Expected JSON."), 400
+    return None
+
+
+@app.get("/api/assistant")
+def assistant_status():
+    if role() != "admin":
+        return jsonify(error="Only staff can use the assistant."), 403
+    return jsonify(enabled=bool(os.environ.get("ANTHROPIC_API_KEY")))
+
+
+@app.post("/api/assistant")
+def assistant():
+    bad = _check_staff_post()
+    if bad:
+        return bad
+    body = request.get_json(silent=True) or {}
+    text = str(body.get("message", "")).strip()
+    if not text:
+        return jsonify(error="Type what you would like to change."), 400
+    chat_id = body.get("chat_id") if isinstance(body.get("chat_id"), str) else None
+    try:
+        return jsonify(chat.converse(chat_id, text))
+    except chat.NotConfigured:
+        return jsonify(error="The assistant isn't switched on yet. It needs an Anthropic API key in the website's settings."), 503
+    except Exception:
+        app.logger.exception("assistant failed")
+        return jsonify(error="The assistant couldn't finish just now. Nothing more was changed. Please try again in a minute."), 502
+
+
+@app.post("/api/assistant/undo")
+def assistant_undo():
+    bad = _check_staff_post()
+    if bad:
+        return bad
+    batch = (request.get_json(silent=True) or {}).get("batch")
+    if not isinstance(batch, str) or not batch:
+        return jsonify(error="Nothing to undo."), 400
+    return jsonify(restored=store.undo_batch(batch))
 
 
 store.seed_if_empty()
