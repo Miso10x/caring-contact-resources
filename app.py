@@ -6,6 +6,7 @@ Two shared passwords, both set as environment variables and never in source:
 Every route except /login and /healthz requires one of them.
 """
 import hmac
+import json
 import os
 import re
 import time
@@ -195,6 +196,15 @@ def delete_doc(collection, doc_id):
         return bad
     store.delete(collection, doc_id)
     return jsonify(ok=True)
+
+
+@app.get("/api/backup")
+def backup():
+    if role() != "admin":
+        return jsonify(error="Only staff can download a backup."), 403
+    body = json.dumps(store.export(), ensure_ascii=False, indent=1)
+    name = "resource-finder-backup-" + time.strftime("%Y-%m-%d") + ".json"
+    return app.response_class(body, mimetype="application/json", headers={"Content-Disposition": f'attachment; filename="{name}"', "Cache-Control": "no-store"})
 
 
 def _check_staff_post():

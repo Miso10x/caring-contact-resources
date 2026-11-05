@@ -157,3 +157,25 @@ def test_api_failure_after_changes_keeps_them_undoable(client, monkeypatch):
     fake.beta.messages.create = flaky
     r = ask(client, "rename grief", fake, monkeypatch).get_json()
     assert r["changes"] and r["batch"] and "lost my connection" in r["reply"]
+
+
+def test_backup_is_staff_only_and_restores_into_a_new_site(client, tmp_path, monkeypatch):
+    login(client, "vol-pass")
+    assert client.get("/api/backup").status_code == 403
+    client.post("/logout")
+    login(client, "staff-pass")
+    client.put("/api/categories/grief", json={"name": "Grief (edited)"}, headers=WRITE)
+    store.delete("available", store.all_docs()["available"][0]["id"])
+    r = client.get("/api/backup")
+    assert r.status_code == 200 and "attachment" in r.headers["Content-Disposition"]
+    data = r.get_json()
+    assert data["categories"]["grief"]["name"] == "Grief (edited)" and data["_migrations"]
+
+    # Start a brand-new copy of the site from the backup: same content, and the one-time updates don't re-run.
+    backup_file = tmp_path / "backup.json"
+    backup_file.write_text(r.get_data(as_text=True))
+    monkeypatch.setenv("DATA_DIR", str(tmp_path / "new-site"))
+    store.seed_if_empty(str(backup_file))
+    store.migrate()
+    fresh = store.export()
+    assert fresh == data

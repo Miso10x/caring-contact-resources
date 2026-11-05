@@ -697,7 +697,8 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
     const tabs = [["resources", "Resources"], ["available", "Available to add (" + S.available.filter(a => !a.dismissed).length + ")"], ["categories", "Categories"], ["notices", "Notices"], ["site", "Page text"]];
     v.replaceChildren(h("div", { class: "admin" },
       assistantBox(),
-      h("p", { class: "muted", style: "margin:0" }, "Changes save for everyone as soon as you press Save. Only people who signed in with the staff password can make changes."),
+      h("p", { class: "muted", style: "margin:0" }, "Changes save for everyone as soon as you press Save. Only people who signed in with the staff password can make changes. ",
+        h("a", { href: "/api/backup", download: true }, "Download a backup of everything")),
       h("div", { class: "tabs" }, tabs.map(([id, label]) => h("button", { type: "button", "aria-pressed": String(S.tab === id), onclick: () => { S.tab = id; S.editing = null; renderAdmin(); } }, label))),
       S.tab === "resources" ? resourcesTab() : S.tab === "available" ? availableTab() : S.tab === "site" ? siteTab() : simpleListTab(S.tab)));
   }

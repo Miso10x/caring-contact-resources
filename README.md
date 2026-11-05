@@ -34,6 +34,10 @@ The Manage panel (staff password only) has an "Ask Claude to make a change" box.
 - Entries with `"suggestion": true` were added by Claude and are not from Caring Contact's documents. They show a "Suggestion: not yet verified" label until staff untick it.
 - Caring Contact's rule is kept as a notice: volunteers never call PES, and PES always arrives with the police.
 
+## Backups and moving the site
+
+Staff can press **Download a backup of everything** on the Manage panel. The file has the same shape as `seed_data.json`. To start a new copy of the site with that content, set `SEED_FILE=/path/to/backup.json` before the site's first start with an empty data folder; it loads the backup instead of the starting data and skips the one-time updates the backup already has.
+
 ## Run and test
 
 ```

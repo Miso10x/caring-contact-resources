@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 COLLECTIONS = ("resources", "categories", "notices", "settings", "available")
 ADMIN_ONLY = ("available",)
 HERE = os.path.dirname(os.path.abspath(__file__))
-SEED_FILE = os.path.join(HERE, "seed_data.json")
+SEED_FILE = os.environ.get("SEED_FILE") or os.path.join(HERE, "seed_data.json")
 
 
 def db_path():
@@ -50,6 +50,9 @@ def seed_if_empty(seed_file=SEED_FILE):
         with open(seed_file, encoding="utf-8") as f:
             seed = json.load(f)
         n = 0
+        # A backup from export() also lists the one-time updates it already has, so they don't run again.
+        for name in seed.pop("_migrations", []):
+            conn.execute("INSERT OR IGNORE INTO migrations (name, applied_at) VALUES (?, ?)", (name, now()))
         for collection, docs in seed.items():
             for doc_id, data in docs.items():
                 _put(conn, collection, doc_id, data)
@@ -192,3 +195,13 @@ def save_chat(chat_id, messages):
             " ON CONFLICT (id) DO UPDATE SET messages = excluded.messages, updated_at = excluded.updated_at",
             (chat_id, json.dumps(messages, ensure_ascii=False), now()),
         )
+
+
+def export():
+    """Everything staff can edit, in the same shape as seed_data.json, so a backup can start a new copy of the site."""
+    out = {c: {} for c in COLLECTIONS}
+    with connect() as conn:
+        for collection, doc_id, data in conn.execute("SELECT collection, id, data FROM docs ORDER BY collection, id"):
+            out.setdefault(collection, {})[doc_id] = json.loads(data)
+        out["_migrations"] = [r[0] for r in conn.execute("SELECT name FROM migrations ORDER BY name")]
+    return out
