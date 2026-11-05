@@ -13,8 +13,19 @@ There are two shared passwords, both stored as Disco environment variables and n
 | `VOLUNTEER_PASSWORD` | Search and read everything |
 | `ADMIN_PASSWORD` | The same, plus the Manage panel (add, edit, hide and delete resources, categories, notices and page text) |
 | `SESSION_SECRET` | A long random string that signs the sign-in cookie |
+| `ANTHROPIC_API_KEY` | Switches on the staff assistant (below). Without it the chat box says it isn't switched on. |
+| `ASSISTANT_MODEL` | Optional. The Claude model the assistant uses; defaults to `claude-opus-5-5`. |
 
 Every route except `/login` and `/healthz` needs one of the passwords. After 5 wrong tries, an address is locked out for 15 minutes. If neither password is set, nobody can sign in.
+
+## Staff assistant
+
+The Manage panel (staff password only) has an "Ask Claude to make a change" box. Staff type a change in plain words and Claude makes it through five tools in `chat.py` that can only search, read, save and delete this site's own records (resources, categories, notices, page text, the "Available to add" list). It has no web access and cannot touch the code, the layout, the passwords or anything outside the database.
+
+- Every change it makes is logged with the earlier version (`changes` table), and each reply has an **Undo these changes** button.
+- It must ask before deleting anything or changing more than 10 records, prefers hiding to deleting, never invents phone numbers or websites, and marks anything not supplied by staff as a suggestion.
+- Conversations are stored in the `chats` table, so a page reload starts a fresh conversation but nothing is lost from the record.
+- Each message costs a few cents of Anthropic API usage, billed to whoever owns the API key.
 
 ## Data
 

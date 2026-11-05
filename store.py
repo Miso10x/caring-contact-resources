@@ -28,6 +28,13 @@ def connect():
         " data TEXT NOT NULL, updated_at TEXT NOT NULL, PRIMARY KEY (collection, id))"
     )
     conn.execute("CREATE TABLE IF NOT EXISTS migrations (name TEXT PRIMARY KEY, applied_at TEXT NOT NULL)")
+    # Every change the staff assistant makes, with the version before it, so it can be undone.
+    conn.execute(
+        "CREATE TABLE IF NOT EXISTS changes (seq INTEGER PRIMARY KEY AUTOINCREMENT, batch TEXT NOT NULL,"
+        " collection TEXT NOT NULL, id TEXT NOT NULL, before TEXT, after TEXT, at TEXT NOT NULL, undone INTEGER NOT NULL DEFAULT 0)"
+    )
+    # Staff assistant conversations, kept on the server so the browser never holds the model's working notes.
+    conn.execute("CREATE TABLE IF NOT EXISTS chats (id TEXT PRIMARY KEY, messages TEXT NOT NULL, updated_at TEXT NOT NULL)")
     return conn
 
 
@@ -119,3 +126,69 @@ def put(collection, doc_id, data):
 def delete(collection, doc_id):
     with connect() as conn:
         conn.execute("DELETE FROM docs WHERE collection = ? AND id = ?", (collection, doc_id))
+
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+
+def get(collection, doc_id):
+    with connect() as conn:
+        return _get(conn, collection, doc_id)
+
+
+def put_logged(batch, collection, doc_id, data):
+    """Save a document and remember the earlier version under `batch`, for undo."""
+    with connect() as conn:
+        before = _get(conn, collection, doc_id)
+        _put(conn, collection, doc_id, data)
+        _log(conn, batch, collection, doc_id, before, data)
+    return before
+
+
+def delete_logged(batch, collection, doc_id):
+    with connect() as conn:
+        before = _get(conn, collection, doc_id)
+        if before is None:
+            return None
+        conn.execute("DELETE FROM docs WHERE collection = ? AND id = ?", (collection, doc_id))
+        _log(conn, batch, collection, doc_id, before, None)
+    return before
+
+
+def _log(conn, batch, collection, doc_id, before, after):
+    dump = lambda d: None if d is None else json.dumps(d, ensure_ascii=False)
+    conn.execute(
+        "INSERT INTO changes (batch, collection, id, before, after, at) VALUES (?, ?, ?, ?, ?, ?)",
+        (batch, collection, doc_id, dump(before), dump(after), now()),
+    )
+
+
+def undo_batch(batch):
+    """Put back every document a batch changed, newest change first. Returns how many were restored."""
+    with connect() as conn:
+        rows = conn.execute(
+            "SELECT seq, collection, id, before FROM changes WHERE batch = ? AND undone = 0 ORDER BY seq DESC", (batch,)
+        ).fetchall()
+        for seq, collection, doc_id, before in rows:
+            if before is None:
+                conn.execute("DELETE FROM docs WHERE collection = ? AND id = ?", (collection, doc_id))
+            else:
+                _put(conn, collection, doc_id, json.loads(before))
+            conn.execute("UPDATE changes SET undone = 1 WHERE seq = ?", (seq,))
+        return len(rows)
+
+
+def load_chat(chat_id):
+    with connect() as conn:
+        row = conn.execute("SELECT messages FROM chats WHERE id = ?", (chat_id,)).fetchone()
+    return json.loads(row[0]) if row else None
+
+
+def save_chat(chat_id, messages):
+    with connect() as conn:
+        conn.execute(
+            "INSERT INTO chats (id, messages, updated_at) VALUES (?, ?, ?)"
+            " ON CONFLICT (id) DO UPDATE SET messages = excluded.messages, updated_at = excluded.updated_at",
+            (chat_id, json.dumps(messages, ensure_ascii=False), now()),
+        )

@@ -181,6 +181,19 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
 .confirm{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--crit-soft);border-radius:10px;padding:8px 12px}
 .adminhead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
 .loading{padding:40px 0;color:var(--muted)}
+/* staff assistant */
+.asst{background:var(--accent-soft);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:10px}
+.asst h2{font-size:18px;margin:0}
+.asst .log{display:grid;gap:8px;max-height:420px;overflow:auto}
+.asst .log:empty{display:none}
+.msg{border-radius:12px;padding:10px 12px;max-width:85%;white-space:pre-wrap;overflow-wrap:anywhere;font-size:15px}
+.msg.me{background:var(--navy);color:var(--navy-ink);justify-self:end}
+.msg.bot{background:var(--surface);border:1px solid var(--line);justify-self:start}
+.msg.bot ul{margin:8px 0 0;padding-left:18px;font-size:14px}
+.msg.bot .adminbar{margin-top:8px}
+.msg.err{background:var(--crit-soft);color:var(--ink)}
+.asst form{display:grid;gap:8px}
+.asst textarea{font:inherit;border:1px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface);min-height:70px;resize:vertical;width:100%;box-sizing:border-box}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}}
 </style>
 </head>
@@ -246,7 +259,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
   };
   const store = (k, v) => { try { if (v === undefined) return localStorage.getItem(k); localStorage.setItem(k, v); } catch (e) { return null; } };
 
-  const S = { resources: [], categories: [], notices: [], available: [], site: null, loaded: new Set(), cat: "all", admin: false, tab: "resources", editing: null };
+  const S = { resources: [], categories: [], notices: [], available: [], site: null, loaded: new Set(), cat: "all", admin: false, tab: "resources", editing: null, chatId: null };
   let db = null;
 
   // ---------- data ----------
@@ -623,10 +636,67 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
       h("div", { class: "adminbar" }, h("button", { type: "submit", class: "btn primary" }, "Save"), st)));
   }
 
+  // ---------- staff assistant (Manage panel only) ----------
+  let asstEl = null;
+  function assistantBox() {
+    if (asstEl) return asstEl;
+    const log = h("div", { class: "log", "aria-live": "polite" });
+    const input = h("textarea", { id: "asstInput", placeholder: "e.g. Change the hours for NAMI NJ to Monday to Friday, 9am to 5pm", "aria-label": "What would you like to change?" });
+    const send = h("button", { type: "submit", class: "btn primary" }, "Send");
+    const st = h("p", { class: "status", role: "status" });
+    const newBtn = h("button", { type: "button", class: "btn", onclick: () => { S.chatId = null; log.replaceChildren(); status(st, ""); input.focus(); } }, "New conversation");
+    const post = async (url, body) => {
+      const res = await fetch(url, { method: "POST", headers: { "Content-Type": "application/json", "X-Requested-With": "fetch" }, body: JSON.stringify(body) });
+      if (res.status === 401) { location.href = "/login"; throw new Error("signed out"); }
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(data.error || "Something went wrong. Please try again.");
+      return data;
+    };
+    const verb = { added: "Added", changed: "Changed", deleted: "Deleted" };
+    const where = { resources: "resource", categories: "category", notices: "notice", settings: "page text", available: "available-to-add list" };
+    const form = h("form", { onsubmit: async e => {
+      e.preventDefault();
+      const text = input.value.trim();
+      if (!text) return;
+      log.append(h("div", { class: "msg me" }, text));
+      input.value = ""; send.disabled = true; status(st, "Working on it… this can take up to a minute.");
+      log.scrollTop = log.scrollHeight;
+      try {
+        const r = await post("/api/assistant", { chat_id: S.chatId, message: text });
+        S.chatId = r.chat_id;
+        const bubble = h("div", { class: "msg bot" }, r.reply);
+        if (r.changes?.length) {
+          const ust = h("span", { class: "status" });
+          const undo = h("button", { type: "button", class: "btn small", onclick: async () => {
+            undo.disabled = true;
+            try { await post("/api/assistant/undo", { batch: r.batch }); status(ust, "Undone. Everything above is back the way it was.", "good"); await db.refresh(); }
+            catch (err) { undo.disabled = false; status(ust, err.message, "err"); }
+          } }, "Undo these changes");
+          bubble.append(h("ul", {}, r.changes.map(c => h("li", {}, `${verb[c.action] || c.action} ${where[c.collection] || c.collection}: ${c.name}`))), h("div", { class: "adminbar" }, undo, ust));
+          await db.refresh();
+        }
+        log.append(bubble); status(st, "");
+      } catch (err) {
+        log.append(h("div", { class: "msg bot err" }, err.message)); status(st, "");
+      }
+      send.disabled = false; log.scrollTop = log.scrollHeight; input.focus();
+    } }, input, h("div", { class: "adminbar" }, send, newBtn, st));
+    input.addEventListener("keydown", e => { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) form.requestSubmit(); });
+    asstEl = h("section", { class: "asst", "aria-label": "Ask Claude to make a change" },
+      h("h2", {}, "Ask Claude to make a change"),
+      h("p", { class: "muted", style: "margin:0;font-size:14px" }, "Describe a change to this website in plain words: add, edit, hide or remove a resource, or change a category, notice or page text. Claude makes the change right away and lists what it changed, with an Undo button. It can only change this website's content."),
+      log, form);
+    fetch("/api/assistant").then(r => r.json()).then(r => {
+      if (!r.enabled) { input.disabled = true; send.disabled = true; status(st, "The assistant isn't switched on yet. It needs an Anthropic API key added to the website's settings.", "err"); }
+    }).catch(() => {});
+    return asstEl;
+  }
+
   function renderAdmin() {
     const v = $("#adminView");
     const tabs = [["resources", "Resources"], ["available", "Available to add (" + S.available.filter(a => !a.dismissed).length + ")"], ["categories", "Categories"], ["notices", "Notices"], ["site", "Page text"]];
     v.replaceChildren(h("div", { class: "admin" },
+      assistantBox(),
       h("p", { class: "muted", style: "margin:0" }, "Changes save for everyone as soon as you press Save. Only people who signed in with the staff password can make changes."),
       h("div", { class: "tabs" }, tabs.map(([id, label]) => h("button", { type: "button", "aria-pressed": String(S.tab === id), onclick: () => { S.tab = id; S.editing = null; renderAdmin(); } }, label))),
       S.tab === "resources" ? resourcesTab() : S.tab === "available" ? availableTab() : S.tab === "site" ? siteTab() : simpleListTab(S.tab)));
@@ -703,6 +773,7 @@ legend{font-weight:700;font-size:14px;padding:0 4px}
       await refresh();
     }
     return {
+      refresh,
       collection: c => ({
         onSnapshot(cb, err) { (subs[c] = subs[c] || []).push(cb); if (err) errs.push(err); schedule(); return () => {}; },
         doc: id => ({ set: data => write("PUT", c, id, data), delete: () => write("DELETE", c, id) }),
